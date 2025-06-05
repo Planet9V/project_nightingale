@@ -53,21 +53,4 @@ The primary purpose is to pursue the “account swap list” but this could be l
 
 * Case studies and supplementary documentation
 
-**Reference reside in Team channel folders**
-
-* Archaea Energy  
-* Caithness Energy  
-* Constellation Energy  
-* Costco  
-* Exxon Mobile  
-* Ford Motor  
-* GE Vestra  
-* KAMO Electric  
-* KC Electric  
-* NRG Energy  
-* Puget Sound Energy  
-* Microsoft  
-* Costco  
-* Amazon  
-* Redactive
 

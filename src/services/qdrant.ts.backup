@@ -1,0 +1,303 @@
+import { QdrantClient } from '@qdrant/js-client-rest';
+import { logger } from '../utils/logger';
+
+// Initialize Qdrant client
+export const qdrantClient = new QdrantClient({
+  url: process.env.QDRANT_URL || 'http://localhost:6333',
+  port: 6333,
+});
+
+// Collection names for different vector types
+export const COLLECTIONS = {
+  VEHICLE_DESCRIPTIONS: 'vehicle_descriptions',
+  VEHICLE_IMAGES: 'vehicle_images',
+  VEHICLE_MODIFICATIONS: 'vehicle_modifications',
+  MARKET_TRENDS: 'market_trends',
+  USER_PREFERENCES: 'user_preferences',
+} as const;
+
+// Vector dimensions for different embedding types
+export const VECTOR_DIMENSIONS = {
+  DESCRIPTION: 768, // OpenAI text-embedding-ada-002 or similar
+  IMAGE: 512, // Image embedding dimension
+  MODIFICATION: 256, // Custom modification embeddings
+  MARKET_POSITION: 128, // Market position embeddings
+  USER_PREFERENCE: 512, // User preference embeddings
+} as const;
+
+// Initialize Qdrant collections
+export const initializeQdrantCollections = async (): Promise<void> => {
+  try {
+    logger.info('🔄 Initializing Qdrant collections...');
+
+    // Vehicle descriptions collection
+    await createCollectionIfNotExists(
+      COLLECTIONS.VEHICLE_DESCRIPTIONS,
+      VECTOR_DIMENSIONS.DESCRIPTION,
+      'Vehicle description embeddings for similarity search'
+    );
+
+    // Vehicle images collection
+    await createCollectionIfNotExists(
+      COLLECTIONS.VEHICLE_IMAGES,
+      VECTOR_DIMENSIONS.IMAGE,
+      'Vehicle image embeddings for visual similarity'
+    );
+
+    // Vehicle modifications collection
+    await createCollectionIfNotExists(
+      COLLECTIONS.VEHICLE_MODIFICATIONS,
+      VECTOR_DIMENSIONS.MODIFICATION,
+      'Vehicle modification embeddings for customization matching'
+    );
+
+    // Market trends collection
+    await createCollectionIfNotExists(
+      COLLECTIONS.MARKET_TRENDS,
+      VECTOR_DIMENSIONS.MARKET_POSITION,
+      'Market trend embeddings for investment analysis'
+    );
+
+    // User preferences collection
+    await createCollectionIfNotExists(
+      COLLECTIONS.USER_PREFERENCES,
+      VECTOR_DIMENSIONS.USER_PREFERENCE,
+      'User preference embeddings for personalization'
+    );
+
+    logger.info('✅ Qdrant collections initialized successfully');
+  } catch (error) {
+    logger.error('❌ Failed to initialize Qdrant collections:', error);
+    throw error;
+  }
+};
+
+// Create collection if it doesn't exist
+const createCollectionIfNotExists = async (
+  collectionName: string,
+  vectorSize: number,
+  description: string
+): Promise<void> => {
+  try {
+    // Check if collection exists
+    const collections = await qdrantClient.getCollections();
+    const existingCollection = collections.collections.find(
+      (col) => col.name === collectionName
+    );
+
+    if (existingCollection) {
+      logger.info(`📦 Collection '${collectionName}' already exists`);
+      return;
+    }
+
+    // Create new collection
+    await qdrantClient.createCollection(collectionName, {
+      vectors: {
+        size: vectorSize,
+        distance: 'Cosine',
+      },
+    });
+
+    logger.info(`✅ Created collection '${collectionName}' (${description})`);
+  } catch (error) {
+    logger.error(`❌ Failed to create collection '${collectionName}':`, error);
+    throw error;
+  }
+};
+
+// Store vehicle description embedding
+export const storeVehicleDescriptionEmbedding = async (
+  vehicleId: number,
+  embedding: number[],
+  metadata: Record<string, any>
+): Promise<string> => {
+  try {
+    const pointId = `vehicle_${vehicleId}_desc`;
+    
+    await qdrantClient.upsert(COLLECTIONS.VEHICLE_DESCRIPTIONS, {
+      wait: true,
+      points: [
+        {
+          id: pointId,
+          vector: embedding,
+          payload: {
+            vehicle_id: vehicleId,
+            type: 'description',
+            ...metadata,
+          },
+        },
+      ],
+    });
+
+    logger.debug(`Stored description embedding for vehicle ${vehicleId}`);
+    return pointId;
+  } catch (error) {
+    logger.error(`Failed to store description embedding for vehicle ${vehicleId}:`, error);
+    throw error;
+  }
+};
+
+// Store vehicle image embedding
+export const storeVehicleImageEmbedding = async (
+  vehicleId: number,
+  imageId: string,
+  embedding: number[],
+  metadata: Record<string, any>
+): Promise<string> => {
+  try {
+    const pointId = `vehicle_${vehicleId}_img_${imageId}`;
+    
+    await qdrantClient.upsert(COLLECTIONS.VEHICLE_IMAGES, {
+      wait: true,
+      points: [
+        {
+          id: pointId,
+          vector: embedding,
+          payload: {
+            vehicle_id: vehicleId,
+            image_id: imageId,
+            type: 'image',
+            ...metadata,
+          },
+        },
+      ],
+    });
+
+    logger.debug(`Stored image embedding for vehicle ${vehicleId}, image ${imageId}`);
+    return pointId;
+  } catch (error) {
+    logger.error(`Failed to store image embedding for vehicle ${vehicleId}:`, error);
+    throw error;
+  }
+};
+
+// Search similar vehicles by description
+export const searchSimilarVehiclesByDescription = async (
+  queryEmbedding: number[],
+  limit: number = 10,
+  threshold: number = 0.7
+) => {
+  try {
+    const searchResult = await qdrantClient.search(COLLECTIONS.VEHICLE_DESCRIPTIONS, {
+      vector: queryEmbedding,
+      limit,
+      score_threshold: threshold,
+      with_payload: true,
+    });
+
+    return searchResult.map((result) => ({
+      vehicleId: result.payload?.vehicle_id,
+      score: result.score,
+      metadata: result.payload,
+    }));
+  } catch (error) {
+    logger.error('Failed to search similar vehicles by description:', error);
+    throw error;
+  }
+};
+
+// Search similar vehicles by image
+export const searchSimilarVehiclesByImage = async (
+  queryEmbedding: number[],
+  limit: number = 10,
+  threshold: number = 0.7
+) => {
+  try {
+    const searchResult = await qdrantClient.search(COLLECTIONS.VEHICLE_IMAGES, {
+      vector: queryEmbedding,
+      limit,
+      score_threshold: threshold,
+      with_payload: true,
+    });
+
+    return searchResult.map((result) => ({
+      vehicleId: result.payload?.vehicle_id,
+      imageId: result.payload?.image_id,
+      score: result.score,
+      metadata: result.payload,
+    }));
+  } catch (error) {
+    logger.error('Failed to search similar vehicles by image:', error);
+    throw error;
+  }
+};
+
+// Store user preference embedding
+export const storeUserPreferenceEmbedding = async (
+  userId: number,
+  embedding: number[],
+  metadata: Record<string, any>
+): Promise<string> => {
+  try {
+    const pointId = `user_${userId}_pref`;
+    
+    await qdrantClient.upsert(COLLECTIONS.USER_PREFERENCES, {
+      wait: true,
+      points: [
+        {
+          id: pointId,
+          vector: embedding,
+          payload: {
+            user_id: userId,
+            type: 'preference',
+            ...metadata,
+          },
+        },
+      ],
+    });
+
+    logger.debug(`Stored preference embedding for user ${userId}`);
+    return pointId;
+  } catch (error) {
+    logger.error(`Failed to store preference embedding for user ${userId}:`, error);
+    throw error;
+  }
+};
+
+// Get personalized vehicle recommendations
+export const getPersonalizedRecommendations = async (
+  userId: number,
+  limit: number = 20
+) => {
+  try {
+    // First, get user's preference embedding
+    const userPoint = await qdrantClient.retrieve(COLLECTIONS.USER_PREFERENCES, {
+      ids: [`user_${userId}_pref`],
+      with_vector: true,
+    });
+
+    if (!userPoint || userPoint.length === 0) {
+      logger.warn(`No preference embedding found for user ${userId}`);
+      return [];
+    }
+
+    const userEmbedding = userPoint[0].vector as number[];
+
+    // Search for similar vehicles
+    return await searchSimilarVehiclesByDescription(userEmbedding, limit, 0.6);
+  } catch (error) {
+    logger.error(`Failed to get personalized recommendations for user ${userId}:`, error);
+    throw error;
+  }
+};
+
+// Health check for Qdrant
+export const checkQdrantHealth = async (): Promise<boolean> => {
+  try {
+    const start = Date.now();
+    await qdrantClient.api('cluster').clusterStatus();
+    const duration = Date.now() - start;
+    
+    logger.debug(`Qdrant health check completed in ${duration}ms`);
+    return true;
+  } catch (error) {
+    logger.error('Qdrant health check failed:', error);
+    return false;
+  }
+};
+
+// Initialize Qdrant on startup
+initializeQdrantCollections().catch((error) => {
+  logger.error('Failed to initialize Qdrant:', error);
+  // Don't exit process as Qdrant is not critical for basic functionality
+});
