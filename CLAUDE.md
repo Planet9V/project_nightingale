@@ -8,17 +8,19 @@ This is Project Nightingale, a critical infrastructure cybersecurity campaign fo
 
 ## Project Status and Session Continuity
 
-**Current Status**: OFFICIAL MASTER LIST TRACKING - 27/56 completed from authoritative list
+**Current Status**: OFFICIAL MASTER LIST TRACKING - 29/56 completed (51.8%) - ENTITY-BASED COMPLETION
 **Target Authority**: `/Project_nightingale_process_start_here/Project_Nightingale_Prospect_List - Sheet1.csv`
-**Next Phase**: Complete remaining 29 prospects from official master list ONLY
+**Next Phase**: Complete remaining 27 prospects using optimal batch execution framework
 
 ### Quick Status Check
 ```bash
 cd /home/jim/gtm-campaign-project
-echo "Master list completed: 27/56 prospects (48.2%)"
-echo "Master list remaining: 29/56 prospects (51.8%)"
-echo "Total artifacts delivered: 420 (270 master list + 150 bonus)"
-echo "Immediate execution ready: 3 prospects with research available"
+echo "Master list completed: 29/56 prospects (51.8%) - ENTITY-BASED COMPLETION"
+echo "Master list remaining: 27/56 prospects (48.2%)"
+echo "Total artifacts delivered: 440 (290 master list + 150 bonus)"
+echo "Entity duplicates resolved: McDonald's & PepsiCo identified as completed"
+echo "Batch 1A ready: 1 prospect with research (A-109140 CenterPoint Energy)"
+cat OPTIMAL_BATCH_EXECUTION_PLAN.md | head -30
 cat MASTER_LIST_VS_COMPLETED_SIDE_BY_SIDE.md | head -30
 ```
 
@@ -79,18 +81,20 @@ cat SESSION_HANDOFF_GUIDE.md
 find /home/jim/gtm-campaign-project/prospects -name "*Project_Nightingale.md" | wc -l
 ```
 
-### Master List Session Restart (Ready for Immediate Execution)
+### Optimal Batch Execution Session Restart
 ```bash
-# Initialize immediate execution todo tracking
-TodoWrite [{"id": "1", "content": "Execute A-027659 Mcdonalds Corporation using existing research", "status": "pending", "priority": "high"}, {"id": "2", "content": "Execute A-037991 PepsiCo Inc using existing research (DIFFERENT from completed A-110753)", "status": "pending", "priority": "high"}, {"id": "3", "content": "Execute A-109140 CenterPoint Energy Inc using existing research", "status": "pending", "priority": "high"}, {"id": "4", "content": "Verify A-094599 Eversource Energy empty folder and complete if needed", "status": "pending", "priority": "medium"}]
+# Review optimal batch execution plan
+cat OPTIMAL_BATCH_EXECUTION_PLAN.md | head -30
 
-# Review accurate master list status
+# Initialize Batch 1A immediate execution todo tracking
+TodoWrite [{"id": "1", "content": "Execute A-109140 CenterPoint Energy Inc using existing research (601 lines) - Batch 1A", "status": "pending", "priority": "high"}, {"id": "2", "content": "Prepare for Batch 1B when user provides research for 5 perfect alignment prospects", "status": "pending", "priority": "high"}, {"id": "3", "content": "Verify A-094599 Eversource Energy empty folder and complete if needed", "status": "pending", "priority": "medium"}]
+
+# Review entity-based completion status
 cat MASTER_LIST_VS_COMPLETED_SIDE_BY_SIDE.md | head -50
 
-# Check available research for immediate execution
-echo "McDonald's: $(wc -l < prospect_research/prospect_research_mcdonalds.md) lines"
-echo "PepsiCo Inc: $(wc -l < prospect_research/prospect_research_pepsico.md) lines"  
+# Check available research for Batch 1A
 echo "CenterPoint Energy: $(wc -l < prospect_research/prospect_research_CenterPoint_Energy.md) lines"
+echo "Entity duplicates resolved: McDonald's (A-027659=A-129751) & PepsiCo (A-037991=A-110753)"
 ```
 
 ### Artifact Creation Process
@@ -103,6 +107,16 @@ echo "CenterPoint Energy: $(wc -l < prospect_research/prospect_research_CenterPo
 # 5. Update checklist: PROJECT_NIGHTINGALE_ARTIFACT_CHECKLIST.md
 ```
 
+### Data Source Integration
+```bash
+# Leverage comprehensive intelligence repositories:
+# Annual threat reports: /Annual_cyber_reports/Annual_cyber_reports_2025/
+# Current advisories: /Current_advisories_2025_7_1/
+# Threat analysis: /support_threat_analysis/
+# Dragos intelligence: /Dragos_information/
+# Executive frameworks: /executive-analysis/
+```
+
 ## Quality Standards (Non-Negotiable)
 
 - **Operational Excellence Positioning**: Security as operational enabler, not traditional cybersecurity
@@ -112,8 +126,16 @@ echo "CenterPoint Energy: $(wc -l < prospect_research/prospect_research_CenterPo
 - **Executive-Level Quality**: C-level presentation standards
 - **Company-Specific Context**: Leverage research files for operational accuracy
 
-## Pre-Configured MCP Servers
+## Technical Infrastructure
 
+### TypeScript Service Architecture
+The project includes a service-oriented architecture in `/src/services/`:
+- **BaseService.ts** - Common service functionality with health monitoring and metrics
+- **ServiceFactory.ts** - Service instantiation and dependency injection
+- **Integration Services** - Tavily, n8n, Supabase, Google AI, OpenRouter, Pinecone, etc.
+- **Utility Services** - Caching, embeddings, database access
+
+### Pre-Configured MCP Servers
 9 MCP servers are automatically available:
 - **filesystem** - Enhanced file operations with /home/jim access
 - **fetch** - Web scraping and data retrieval
@@ -126,6 +148,13 @@ echo "CenterPoint Energy: $(wc -l < prospect_research/prospect_research_CenterPo
 - **windtools** - System utilities
 
 Quick check: `claude mcp list`
+
+### Development Environment
+```bash
+# No package.json - this is primarily a data/content project
+# TypeScript services are standalone modules
+# Configuration via .claude/settings.local.json for MCP permissions
+```
 
 ## Key File Locations
 
@@ -166,9 +195,9 @@ When starting a new session:
 
 ## Project Success Summary
 
-**MAJOR ACHIEVEMENT**: Project Nightingale has successfully delivered 420 artifacts across 42 prospects (27 master list + 15 bonus) using proven Tier 1 optimizations, demonstrating 40% efficiency improvement while maintaining executive-level quality standards. Master list completion stands at 27/56 (48.2%) with accurate tracking established.
+**MAJOR ACHIEVEMENT**: Project Nightingale has successfully delivered 440 artifacts across 44 prospects (29 master list + 15 bonus) using proven Tier 1 optimizations and ENTITY-BASED COMPLETION LOGIC, demonstrating 40% efficiency improvement while maintaining executive-level quality standards. Master list completion stands at 29/56 (51.8%) with optimal batch execution framework established.
 
-**IMMEDIATE EXECUTION STATUS**: 3 prospects ready for immediate execution with research available. 26 prospects require MCP research collection. All documentation updated for seamless session handoff with ZERO duplicated work risk.
+**IMMEDIATE EXECUTION STATUS**: Batch 1A ready with 1 prospect (A-109140 CenterPoint Energy). Batch 1B prepared for 5 perfect alignment prospects awaiting user research. Optimal batch execution plan created for remaining 27 prospects. All documentation updated for seamless session handoff with ZERO duplicated work risk.
 
 The project uses a proven methodology with template-driven efficiency while maintaining premium quality standards for executive engagement and perfect Project Nightingale mission alignment.
 

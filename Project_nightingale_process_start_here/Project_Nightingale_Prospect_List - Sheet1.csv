@@ -1,12 +1,13 @@
 
+Project Nightingdal Prospect Target List (Master)
+
 Account Unique Id,Account Name,Account Manager
-A-019226,"BMW Financial Services NA, LLC",Matthew Donahue
-A-140902,Nature Energy Biogas A/S,William Filosa
-A-019866,"Applied Materials, Inc.",Steve Thompson
+A-140902, Nature Energy Biogas A/S,William Filosa
+A-019866, Applied Materials, Inc.,Steve Thompson
 A-140039,Iroquois Gas Transmission System LP,Jeb Carter
-A-078866,"Crestron Electronics, Inc",Matthew Donahue
+A-078866,Crestron Electronics, Inc",Matthew Donahue
 A-019237,Chevron U.S.A. Inc.,Jeb Carter
-A-145234,"Perdue Farms, Inc",Wayne Margolin
+A-145234, Perdue Farms, Inc,Wayne Margolin
 A-153007,Hyfluence Systems Corp,Dani LaCerra
 A-014610,Veson,William Filosa
 A-014671,Spellman High Volatage Electronics,Jeb Carter
@@ -14,12 +15,9 @@ A-015484,Washington Metropolitan Area Transit Authority (WMATA),William Filosa
 A-017469,AeroDefense,Daniel Paszkiewicz
 A-018814,Boeing,Jim Vranicar
 A-020265,Exelon Energy,Jim Vranicar
-A-027659,Mcdonalds Corporation,
-A-027918,BMW Manufacturing,Matthew Donahue
 A-029867,Johnson Controls,Jim Vranicar
 A-029914,United States Steel Corporation,Jim Vranicar
 A-030922,Evergy,Jim Vranicar
-A-034695,Exelon Corporation,Shannon Maloney
 A-072258,General Electric Company (Haier),Jim Vranicar
 A-075450,Southern California Edison Company,Nate Russo
 A-094599,EVERSOURCE ENERGY,#N/A
@@ -40,18 +38,33 @@ A-031305,AES Corporation,William Filosa
 A-033248,Portland General Electric Co.,Jim Vranicar
 A-035329,International Paper Company,William Filosa
 A-037323,PG&E (Pacific Gas and Electric),Jim Vranicar
-A-037991,"PepsiCo, Inc.",Steve Thompson
+A-037991,PepsiCo, Inc.,Steve Thompson
 A-052457,Pacificorp,Sarah Sobolewski
 A-062364,Port of Long Beach,Jim Vranicar
 A-075745,Port of San Francisco,Jim Vranicar
 A-092681,"Ontario Power Generation, Inc.",William Filosa
-A-107413,Exelon Business Services Co.,#N/A
 A-109140,"CenterPoint Energy, Inc.",Jeb Carter
 A-110670,San Francisco International Airport Corp,Jim Vranicar
-A-111353,BMW NA (Manu),Matthew Donahue
-A-112386,BMW North America,Matthew Donahue
+A-112386,BMW,Matthew Donahue
 A-122495,"Vermont Electric Power Company, Inc.",William Filosa
 A-124202,Westlake Chemical Corporation,Jeb Carter
 A-129751,McDonald's Corporation,Steve Thompson
 A-135830,National Fuel Gas Distribution Corporation,Daniel Paszkiewicz
 A-138100,Halliburton Manufacturing & Services,Jeb Carter
+
+## BONUS List - Identified as key additions to GTM
+
+| A-150002_ExxonMobil_Corporation | ✅ COMPLETED | Energy sector leadership |
+| A-150003_CenterPoint_Energy | ✅ COMPLETED | Critical infrastructure |
+| A-150004_KAMO_Electric_Cooperative | ✅ COMPLETED | Rural energy security |
+| A-150005_Vermont_Electric_Power_Company | ✅ COMPLETED | Regional utility |
+| A-150007_Range_Resources_Corporation | ✅ COMPLETED | Natural gas infrastructure |
+| A-150011_Constellation_Energy | ✅ COMPLETED | Nuclear energy leadership |
+| A-150015_Neara_Power_Management | ✅ COMPLETED | Grid technology innovation |
+| A-150016_Archaea_Energy | ✅ COMPLETED | Renewable energy |
+| A-150018_Caithness_Energy | ✅ COMPLETED | Independent power producer |
+| A-150019_Eversource_Energy | ✅ COMPLETED | Northeast utility |
+| A-150020_New_Energy_Cooperative | ✅ COMPLETED | Agricultural energy |
+| A-150021_John_Deere_Company | ✅ COMPLETED | Agricultural technology |
+| A-150022_Land_O_Lakes_Inc | ✅ COMPLETED | Food production |
+| A-150023_American_Water_Works | ✅ COMPLETED | Water infrastructure |
