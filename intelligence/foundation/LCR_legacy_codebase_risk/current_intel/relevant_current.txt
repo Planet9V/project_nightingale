@@ -1,0 +1,1 @@
+/home/jim/gtm-campaign-project/intelligence/current/advisories/cisa_kev_historical.json

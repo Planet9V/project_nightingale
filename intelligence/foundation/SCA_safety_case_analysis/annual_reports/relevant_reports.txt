@@ -1,0 +1,15 @@
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/NCSC-Cyber-Threat-Report-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/Upstream-Global-Automotive-Cybersecurity-Report-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/Proofpoint-State-of-the-Phish-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/Mimecast-Global-Threat-Intelligence-Report-H1-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/Whitehouse-Cybersecurity-Posture-of-the-United-States-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/Verizon-Mobile-Security-Index-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/DHS-Threat Assessment-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2024/RecordedFuture-Cyber-Threat-Analysis-Report-2024.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2025/ODNI-Annual-Threat-Assessment-2025.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2025/Upstream-Global-Automotive-Cybersecurity-Report-2025.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2025/DHS-Threat-Assessment-2025.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2025/WEF-Global-Cybersecurity-Outlook-2025.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2025/Trustwave-Manufacturing-Risk-Radar-Report-2025.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2023/Trustwave-Manufacturing-Sector-Threat-Landscape-2023.md
+/home/jim/gtm-campaign-project/Annual_cyber_reports/Annual_cyber_reports_2023/NCCGroup-Annual-Research-Report-2023.md

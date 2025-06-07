@@ -1,0 +1,10 @@
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2025/32xxx/CVE-2025-32472.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2024/37xxx/CVE-2024-37287.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2024/6xxx/CVE-2024-6456.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2024/6xxx/CVE-2024-6325.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2024/6xxx/CVE-2024-6326.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2022/2xxx/CVE-2022-2760.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2020/8xxx/CVE-2020-8974.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2020/8xxx/CVE-2020-8973.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2020/8xxx/CVE-2020-8975.json
+/home/jim/gtm-campaign-project/intelligence/external_sources/cisa_vulnrichment/2020/8xxx/CVE-2020-8976.json

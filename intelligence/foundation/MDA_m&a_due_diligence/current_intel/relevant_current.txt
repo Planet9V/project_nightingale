@@ -1,0 +1,2 @@
+/home/jim/gtm-campaign-project/intelligence/current/advisories/cisa_kev_historical.json
+/home/jim/gtm-campaign-project/intelligence/current/vulnerabilities/cisa_enriched_vulns.json
