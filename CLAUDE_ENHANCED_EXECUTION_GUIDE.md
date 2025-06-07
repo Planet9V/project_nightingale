@@ -1,9 +1,9 @@
 # Claude Code: Enhanced Project Nightingale Execution Guide
 ## Reliable Process Documentation for Optimal Session Performance
 
-**Last Updated**: June 6, 2025  
-**Purpose**: Comprehensive execution guide for Claude Code sessions  
-**Critical**: Follow exact order for optimal intelligence and quality results
+**Last Updated**: January 7, 2025, 4:45 PM EST - Enhanced with Theme Selection & Consolidation  
+**Purpose**: Comprehensive execution guide for Claude Code sessions with strategic enhancement capabilities  
+**Critical**: Follow exact order for optimal intelligence and quality results - Enhanced theme selection integrated
 
 ---
 
@@ -13,6 +13,31 @@
 ```bash
 # Always run first - understand current state
 cd /home/jim/gtm-campaign-project
+
+# Enhanced theme selection logic for optimal prospect targeting
+THEME_SELECTION_MATRIX() {
+    local INDUSTRY="$1"
+    case "$INDUSTRY" in
+        *"Manufacturing"*|*"Automotive"*|*"Aerospace"*)
+            echo "SCV:98342"  # Supply Chain Vulnerability
+            ;;
+        *"Energy"*|*"Utilities"*|*"Power"*)
+            echo "ITC:46033"  # IT/OT Convergence Security
+            ;;
+        *"Chemical"*|*"Pharmaceutical"*|*"Oil"*|*"Gas"*)
+            echo "IEC:10"     # IEC 62443 Compliance
+            ;;
+        *"Transportation"*|*"Aviation"*|*"Rail"*)
+            echo "SCA:27"     # Safety Case Analysis
+            ;;
+        *"Technology"*|*"Infrastructure"*)
+            echo "LCR:223"    # Legacy Codebase Risk
+            ;;
+        *)
+            echo "RIA:240"    # Ransomware (universal fallback)
+            ;;
+    esac
+}
 echo "🔍 PROJECT NIGHTINGALE STATUS CHECK"
 echo "Current time: $(date)"
 echo "Base completion: 49/49 prospects (100%)"

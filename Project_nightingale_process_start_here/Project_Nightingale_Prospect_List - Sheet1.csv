@@ -1,70 +1,70 @@
-
-Project Nightingdal Prospect Target List (Master)
-
-Account Unique Id,Account Name,Account Manager
-A-140902, Nature Energy Biogas A/S,William Filosa
-A-019866, Applied Materials, Inc.,Steve Thompson
-A-140039,Iroquois Gas Transmission System LP,Jeb Carter
-A-078866,Crestron Electronics, Inc",Matthew Donahue
-A-019237,Chevron U.S.A. Inc.,Jeb Carter
-A-145234, Perdue Farms, Inc,Wayne Margolin
-A-153007,Hyfluence Systems Corp,Dani LaCerra
-A-014610,Veson,William Filosa
-A-014671,Spellman High Volatage Electronics,Jeb Carter
-A-015484,Washington Metropolitan Area Transit Authority (WMATA),William Filosa
-A-017469,AeroDefense,Daniel Paszkiewicz
-A-018814,Boeing,Jim Vranicar
-A-020265,Exelon Energy,Jim Vranicar
-A-029867,Johnson Controls,Jim Vranicar
-A-029914,United States Steel Corporation,Jim Vranicar
-A-030922,Evergy,Jim Vranicar
-A-072258,General Electric Company (Haier),Jim Vranicar
-A-075450,Southern California Edison Company,Nate Russo
-A-094599,EVERSOURCE ENERGY,#N/A
-A-096235,Axpo U.S. LLC,Wayne Margolin
-A-107329,Casper Sleep Inc.,William Filosa
-A-110753,PepsiCo Beverages Company,Sarah Sobolewski
-A-018829,Puget Sound Energy,Jim Vranicar
-A-153223,GE Vernova,Ted Smits
-A-008302,US Sugar,Matthew Donahue
-A-122766,Maher Terminals Inc.,William Filosa
-A-019227,Duke Energy Corporation,#N/A
-A-019946,Engie,Patrick Higgins
-A-020312,"Analog Devices, Inc.",William Filosa
-A-029615,Norfolk Southern Corporation,William Filosa
-A-029638,"Pepco Holdings, Inc.",William Filosa
-A-030734,Consumers Energy,Jim Vranicar
-A-031305,AES Corporation,William Filosa
-A-033248,Portland General Electric Co.,Jim Vranicar
-A-035329,International Paper Company,William Filosa
-A-037323,PG&E (Pacific Gas and Electric),Jim Vranicar
-A-037991,PepsiCo, Inc.,Steve Thompson
-A-052457,Pacificorp,Sarah Sobolewski
-A-062364,Port of Long Beach,Jim Vranicar
-A-075745,Port of San Francisco,Jim Vranicar
-A-092681,"Ontario Power Generation, Inc.",William Filosa
-A-109140,"CenterPoint Energy, Inc.",Jeb Carter
-A-110670,San Francisco International Airport Corp,Jim Vranicar
-A-112386,BMW,Matthew Donahue
-A-122495,"Vermont Electric Power Company, Inc.",William Filosa
-A-124202,Westlake Chemical Corporation,Jeb Carter
-A-129751,McDonald's Corporation,Steve Thompson
-A-135830,National Fuel Gas Distribution Corporation,Daniel Paszkiewicz
-A-138100,Halliburton Manufacturing & Services,Jeb Carter
-
-## BONUS List - Identified as key additions to GTM
-
-| A-150002_ExxonMobil_Corporation | ✅ COMPLETED | Energy sector leadership |
-| A-150003_CenterPoint_Energy | ✅ COMPLETED | Critical infrastructure |
-| A-150004_KAMO_Electric_Cooperative | ✅ COMPLETED | Rural energy security |
-| A-150005_Vermont_Electric_Power_Company | ✅ COMPLETED | Regional utility |
-| A-150007_Range_Resources_Corporation | ✅ COMPLETED | Natural gas infrastructure |
-| A-150011_Constellation_Energy | ✅ COMPLETED | Nuclear energy leadership |
-| A-150015_Neara_Power_Management | ✅ COMPLETED | Grid technology innovation |
-| A-150016_Archaea_Energy | ✅ COMPLETED | Renewable energy |
-| A-150018_Caithness_Energy | ✅ COMPLETED | Independent power producer |
-| A-150019_Eversource_Energy | ✅ COMPLETED | Northeast utility |
-| A-150020_New_Energy_Cooperative | ✅ COMPLETED | Agricultural energy |
-| A-150021_John_Deere_Company | ✅ COMPLETED | Agricultural technology |
-| A-150022_Land_O_Lakes_Inc | ✅ COMPLETED | Food production |
-| A-150023_American_Water_Works | ✅ COMPLETED | Water infrastructure |
+GTM_Status,Account_Unique_Id,Account_Name,NCC_Account_Manager,Dragos_Account_Manager,Industry_Sector,Industry_Subsector,Dragos_Active,Notes,Regulatory_Focus,Geographic_Region,Primary_Campaign_Theme,Theme_Status,Secondary_Theme,Secondary_Status,Supply_Chain_Vulnerability,IT_OT_Convergence_Security,Legacy_Codebase_Risk,Product_Lifecycle_Monitoring,Safety_Case_Analysis,Network_Visibility_Compliance,Ransomware_Impact_Assessment,M_A_Due_Diligence
+Original,A-140902,Nature Energy Biogas A/S,William Filosa,EMEA,Energy,Renewable Natural Gas,No,Shell,EU Energy Standards,EMEA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-019866,Applied Materials Inc.,Steve Thompson,Eric Dikeman,Technology,Semiconductor Equipment,No,Lost RFP,Export Controls,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-140039,Iroquois Gas Transmission System LP,Jeb Carter,Z Greenberg,Energy,Natural Gas Pipeline,Customer,,Pipeline Security Standards,USA,Ransomware Impact Assessment,In Progress,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-078866,Crestron Electronics Inc.,Matthew Donahue,?,Technology,Electronics Manufacturing,No,,Industrial Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-019237,Chevron U.S.A. Inc.,Jeb Carter,Keith Evans,Energy,Oil & Gas Upstream,Yes,,API Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-145234,Perdue Farms Inc.,Wayne Margolin,Zach Mahon,Consumer Staples,Food Production,Lost,,USDA/Food Safety Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-153007,Hyfluence Systems Corp,Dani LaCerra,,Technology,Energy Management Systems,,ex,Energy Standards,USA,M&A Due Diligence,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-014610,Veson,William Filosa,Jess Lytle,Technology,Maritime Software,No,,Maritime Security Standards,USA,M&A Due Diligence,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-014671,Spellman High Volatage Electronics,Jeb Carter,?,Industrials,High Voltage Equipment,No,,Electrical Safety Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-015484,Washington Metropolitan Area Transit Authority (WMATA),William Filosa,Jess Lytle,Transportation,Mass Transit,No,,FTA/TSA Standards,USA,Ransomware Impact Assessment,In Progress,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-017469,AeroDefense,Daniel Paszkiewicz,Zach Greenberg,Industrials,Defense Technology,,NIST/Defense Standards,USA,M&A Due Diligence,In Progress,Legacy Codebase Risk,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-018814,Boeing,Jim Vranicar,Trevor Hollis,Industrials,Aerospace Manufacturing,No,,FAA/Aviation Safety Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-020265,Exelon Energy,Jim Vranicar,Zach Mahon,Utilities,Electric Utility,Customer,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-029867,Johnson Controls,Jim Vranicar,Mike Devin,Industrials,Building Technologies,Customer,,Industrial Safety Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-029914,United States Steel Corporation,Jim Vranicar,Open,Materials,Steel Manufacturing,No,,Industrial Compliance Standards,USA,Ransomware Impact Assessment,In Progress,Legacy Codebase Risk,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-030922,Evergy,Jim Vranicar,Mike Devin,Utilities,Electric Utility,No,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-072258,General Electric Company (Haier),Jim Vranicar,Tom Ullrich,Industrials,Industrial Conglomerate,Customer,,Multiple Industry Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-075450,Southern California Edison Company,Nate Russo,Eric Dikeman,Utilities,Electric Utility,Customer,,NERC-CIP/CPUC Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-094599,EVERSOURCE ENERGY,William Filosa,Matt Jacobs,Utilities,Electric Utility,Customer,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-096235,Axpo U.S. LLC,Wayne Margolin,EMEA,Energy,Energy Trading,,Energy Market Regulations,USA,M&A Due Diligence,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-107329,Casper Sleep Inc.,William Filosa,?,Consumer Discretionary,Consumer Products,No,,Consumer Product Safety Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-110753,PepsiCo Beverages Company,Sarah Sobolewski,Keith Evans,Consumer Staples,Food & Beverage,Previous,RRR,FDA Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-018829,Puget Sound Energy,Jim Vranicar,Eric Dikeman,Utilities,Electric & Gas Utility,Yes,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-153223,GE Vernova,Jim Vranicar,Zach Mahon,Industrials,Energy Technology,No,,Multiple Industry Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-008302,US Sugar,Matthew Donahue,?,Consumer Staples,Sugar Processing,No,,FDA/USDA Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-122766,Maher Terminals Inc.,William Filosa,Jess Lytle,Transportation,Maritime Terminal,No,,Maritime Security Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-019227,Duke Energy Corporation,William Filosa,Joe Groe,Utilities,Electric Utility,No,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-019946,Engie,William Filosa,EMEA,Energy,Energy Services,Yes,WV,Multiple Energy Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-020312,Analog Devices Inc.,William Filosa,Matt Jacobs,Technology,Semiconductor Manufacturing,No,,Export Control Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-029615,Norfolk Southern Corporation,William Filosa,Tim Slater,Transportation,Rail Transportation,Previous,,FRA Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-029638,Pepco Holdings Inc.,William Filosa,Zach Greenberg,Utilities,Electric & Gas Utility,No,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-030734,Consumers Energy,Jim Vranicar,Open,Utilities,Electric & Gas Utility,No,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-031305,AES Corporation,William Filosa,Zach Mahon,Utilities,Electric Utility,Yes,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-033248,Portland General Electric Co.,Jim Vranicar,Eric Dikeman,Utilities,Electric Utility,Yes,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-035329,International Paper Company,William Filosa,Nanci Uher,Materials,Paper & Packaging,Lost?,,Industrial Environmental Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-037323,PG&E (Pacific Gas and Electric),Jim Vranicar,Eric Dikeman,Utilities,Electric & Gas Utility,Customer,,NERC-CIP/CPUC Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-037991,PepsiCo Inc.,Steve Thompson,Keith Evans,Consumer Staples,Food & Beverage,Previous,RRR,FDA/Food Safety Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-052457,Pacificorp,Sarah Sobolewski,Mike Devin,Utilities,Electric Utility,Customer,BHE Sub,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-062364,Port of Long Beach,Jim Vranicar,Van Stewart,Transportation,Maritime Port,Maybe,WV,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-075745,Port of San Francisco,Jim Vranicar,Van Stewart,Transportation,Maritime Port,No,,Maritime Security Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-092681,Ontario Power Generation Inc.,William Filosa,Shawn O'Neil,Utilities,Nuclear Energy,Maybe,,Nuclear Regulatory Standards,Canada,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-109140,CenterPoint Energy Inc.,Jeb Carter,Keith Evans,Utilities,Electric & Gas Utility,Yes,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-110670,San Francisco International Airport Corp,Jim Vranicar,Van Stewart,Transportation,Airport Operations,No,,TSA/FAA Standards,USA,Ransomware Impact Assessment,In Progress,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-112386,BMW,Matthew Donahue,EMEA,Consumer Discretionary,Automotive Manufacturing,,Automotive Safety Standards,USA,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-122495,Vermont Electric Power Company Inc.,William Filosa,Jess Lytle,Utilities,Electric Utility,No,,NERC-CIP Standards,USA,Ransomware Impact Assessment,In Progress,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-124202,Westlake Chemical Corporation,Jeb Carter,Trevoe Hollis,Materials,Chemical Manufacturing,Yes,,Chemical Facility Security Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-129751,McDonald's Corporation,Jim Vranicar,Tom Ullrich,Consumer Discretionary,Restaurant Operations,No,,FDA/Food Safety Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-135830,National Fuel Gas Distribution Corporation,Daniel Paszkiewicz,,Utilities,Gas Distribution,Customer,,Pipeline Security Standards,USA,Ransomware Impact Assessment,In Progress,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-138100,Halliburton Manufacturing & Services,Jeb Carter,James Smith,Energy,Oilfield Services,No,,API Standards,USA,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Addon,A-150002,ExxonMobil Corporation,AM not assigned,,Energy,Oil & Gas Integrated,,Energy sector leadership,API Standards,USA,Ransomware Impact Assessment,Not Started,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150003,CenterPoint Energy,AM not assigned,,Utilities,Electric & Gas Utility,,Critical infrastructure,NERC-CIP Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150004,KAMO Electric Cooperative,AM not assigned,,Utilities,Electric Cooperative,,Rural energy security,NERC-CIP Standards,USA,Ransomware Impact Assessment,Not Started,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150005,Vermont Electric Power Company,AM not assigned,,Utilities,Electric Utility,,Regional utility,NERC-CIP Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150007,Range Resources Corporation,AM not assigned,,Energy,Natural Gas Production,,Natural gas infrastructure,API Standards,USA,Ransomware Impact Assessment,Not Started,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150011,Constellation Energy,AM not assigned,,Utilities,Nuclear Energy,,Nuclear energy leadership,Nuclear Regulatory Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150015,Neara Power Management,AM not assigned,,Technology,Grid Technology,,Grid technology innovation,Australian Energy Standards,Australia,M&A Due Diligence,Not Started,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150016,Archaea Energy,AM not assigned,,Energy,Renewable Energy,,Renewable energy,EPA/Energy Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150018,Caithness Energy,AM not assigned,,Energy,Independent Power Production,,Independent power producer,NERC-CIP Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150019,Eversource Energy,AM not assigned,,Utilities,Electric Utility,,Northeast utility,NERC-CIP Standards,USA,Ransomware Impact Assessment,Not Started,IT/OT Convergence Security,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150020,New Energy Cooperative,AM not assigned,,Utilities,Energy Cooperative,,Agricultural energy,Cooperative Energy Standards,USA,Ransomware Impact Assessment,Not Started,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150021,John Deere Company,AM not assigned,,Industrials,Agricultural Technology,,Agricultural technology,Agricultural Safety Standards,USA,M&A Due Diligence,Not Started,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150022,Land O'Lakes Inc,AM not assigned,,Consumer Staples,Food Production Cooperative,,Food production,USDA/Food Safety Standards,USA,Ransomware Impact Assessment,Not Started,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Addon,A-150023,American Water Works,AM not assigned,,Utilities,Water Utility,,Water infrastructure,EPA/Water Safety Standards,USA,Ransomware Impact Assessment,Not Started,Network Visibility Compliance,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started
+Original,A-EMEA-20001,ASML,Vincent de Midlt,,Technology,Semiconductor Equipment,,EU Technology Standards,Netherlands,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-EMEA-20002,NXP,Vincent de Midlt,,Technology,Semiconductor Manufacturing,,EU Technology Standards,Netherlands,M&A Due Diligence,In Progress,Product Lifecycle Monitoring,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-EMEA-20003,VDL,Vincent de Midlt,,Industrials,Automotive Manufacturing,,EU Automotive Standards,Netherlands,M&A Due Diligence,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress
+Original,A-EMEA-20004,Tata Steel,Vincent de Midlt,,Materials,Steel Manufacturing,,EU Industrial Standards,Netherlands,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-EMEA-20005,Friesland Campina,Vincent de Midlt,,Consumer Staples,Dairy Production,,EU Food Safety Standards,Netherlands,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started
+Original,A-EMEA-20006,Enza Zaden,Vincent de Midlt,,Consumer Staples,Seed Production,,EU Agricultural Standards,Netherlands,Ransomware Impact Assessment,In Progress,Supply Chain Vulnerability,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,Not Started,In Progress,Not Started

@@ -1,9 +1,9 @@
 # Project Nightingale: Master Template Index
 ## Comprehensive Template Library for GTM Campaign Excellence
 
-**Last Updated**: June 6, 2025 at 9:15 AM CST  
+**Last Updated**: Saturday, June 7, 2025 at 15:45 UTC  
 **Purpose**: Centralized index of all templates, prompts, and frameworks  
-**Project Status**: 100% Complete - Optimized Repository Structure
+**Project Status**: Enhanced with Express Attack Brief Dual Generation System  
 
 ---
 
@@ -18,6 +18,15 @@
   - Specialized Reports (Compliance, Ransomware, M&A, Executive Concierge)
 - **Quality Standard**: Executive C-level presentation quality
 - **Optimization**: Tier 1 framework with 40% efficiency improvement
+
+### **🆕 EXPRESS ATTACK BRIEF SYSTEM**
+- **Location**: `/express_attack_briefs/` (New organized structure)
+- **Purpose**: Dual intelligence document generation for current threats
+- **Documents**: 
+  - **Optimized Brief**: Executive-friendly structured threat intelligence
+  - **Technical Analysis**: SOC analyst MITRE ATT&CK-based forensic analysis
+- **Naming Convention**: `NCC-OTCE-EAB-###-[THREAT_NAME]-[TYPE].md`
+- **Current Status**: Production ready with VOLTZITE campaign example (EAB-001)
 
 ### **Artifact Templates by Category**
 - **Location**: `/templates/artifact_templates/` (Ready for expansion)
@@ -67,6 +76,32 @@
 - **Framework**: `PROSPECT_THEME_CLASSIFICATION.md`
 - **Analysis**: `SERVICE_THEME_ANALYSIS.md` (comprehensive ultrathink development)
 - **Implementation**: `SERVICE_THEME_FRAMEWORK.md` (technical framework)
+
+---
+
+## 📋 EXPRESS ATTACK BRIEF SYSTEM (NEW)
+
+### **Dual Generation Framework**
+- **Location**: `/express_attack_briefs/`
+- **Master Documentation**: `EXPRESS_ATTACK_BRIEF_SYSTEM_DOCUMENTATION.md`
+- **Purpose**: Current threat intelligence for both executive and technical audiences
+
+#### **Production Documents** 
+- **Final Products**: `/express_attack_briefs/final_products/`
+- **EAB-001**: VOLTZITE Grid Targeting Campaign (Energy Sector)
+  - `NCC-OTCE-EAB-001-VOLTZITE-Optimized.md` - Executive intelligence brief
+  - `NCC-OTCE-EAB-001-VOLTZITE-Technical-Analysis.md` - Technical MITRE analysis
+
+#### **Generation Templates**
+- **Optimized Brief Generation**: `templates/OPTIMIZED_EXPRESS_ATTACK_BRIEF_GENERATION_PROMPT.md`
+- **Technical Analysis Generation**: `templates/TECHNICAL_MITRE_ANALYSIS_GENERATION_PROMPT.md`
+- **Dual System Framework**: `templates/EXPRESS_ATTACK_BRIEF_DUAL_GENERATION_SYSTEM.md`
+
+#### **Integration Features**
+- **MCP Tavily Integration**: Automated MITRE ATT&CK validation
+- **Sector Automation**: Manufacturing, Energy, Water, Food/Agriculture focus
+- **Monthly Updates**: Automated current threat identification
+- **Quality Standards**: Executive accessibility + Technical authority
 
 ## 💬 PROMPT TEMPLATES
 
