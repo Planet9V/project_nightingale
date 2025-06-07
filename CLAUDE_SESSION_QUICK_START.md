@@ -3,6 +3,7 @@
 
 **Purpose**: Get Claude Code sessions productive immediately with enhanced intelligence capabilities  
 **Updated**: June 6, 2025  
+**Last Enhancement**: January 6, 2025 - Intelligence .gitignore documentation  
 **Session Type**: Any Claude Code session working with Project Nightingale
 
 ---
@@ -49,15 +50,21 @@ fi
 
 ### **Prerequisites** ⏱️ 1 minute
 ```bash
-# Ensure intelligence is current (weekly refresh recommended)
+# Ensure intelligence is initialized and current
 echo "📅 Intelligence Currency Check:"
-LATEST_INTEL=$(find intelligence/current -name "*.json" -mtime -7 2>/dev/null | wc -l)
-if [ $LATEST_INTEL -eq 0 ]; then
-    echo "⚠️ Intelligence over 7 days old - recommend refresh"
-    echo "Quick refresh: 5 minutes"
-    echo "Full refresh: 20 minutes"
+if [ ! -d "intelligence/current" ]; then
+    echo "❌ Intelligence not initialized - run full pipeline setup first"
+    echo "Full setup required: 15-20 minutes"
+    echo "Command: ./intelligence/scripts/enhanced_intelligence_pipeline.sh"
+    exit 1
 else
-    echo "✅ Intelligence is current"
+    LATEST_INTEL=$(find intelligence/current -name "*.json" -mtime -7 2>/dev/null | wc -l)
+    if [ $LATEST_INTEL -eq 0 ]; then
+        echo "⚠️ Intelligence over 7 days old - recommend refresh before prospect generation"
+        echo "Quick refresh: 5 minutes"
+    else
+        echo "✅ Intelligence is current and ready"
+    fi
 fi
 ```
 
@@ -146,20 +153,38 @@ mcp__tavily__tavily-search query="operational technology cybersecurity threats 2
 echo "✅ Quick intelligence refresh complete"
 ```
 
-### **Full Pipeline Refresh** ⏱️ 15-20 minutes (Monthly recommended)
+### **Full Pipeline Setup** ⏱️ 15-20 minutes (Initial repository setup + as needed)
 ```bash
-# Complete intelligence ecosystem update
-echo "🚀 FULL INTELLIGENCE PIPELINE REFRESH"
+# Complete intelligence ecosystem initialization/update
+echo "🚀 FULL INTELLIGENCE PIPELINE SETUP"
 ./intelligence/scripts/enhanced_intelligence_pipeline.sh
 
 # This executes:
-# - GitHub repository updates (CISA, academic papers, datasets)
+# - GitHub repository downloads (CISA, academic papers, datasets)
 # - Partner intelligence collection (Dragos, Adelard, NCC)
 # - Current threat intelligence gathering
 # - Theme-specific intelligence curation
 # - Complete vulnerability database processing
 
-echo "✅ Full pipeline refresh complete - ready for prospect generation"
+echo "✅ Full pipeline setup complete - ready for prospect generation"
+```
+
+### **⚠️ Intelligence Data Management** ⏱️ 1 minute (CRITICAL)
+```bash
+# IMPORTANT: Local-only intelligence data (.gitignore configuration)
+echo "🚨 INTELLIGENCE DATA MANAGEMENT"
+echo "The following directories are EXCLUDED from git commits:"
+echo "❌ intelligence/current/          # Real-time threat data (100MB+)"
+echo "❌ intelligence/external_sources/  # GitHub repositories (500MB+)"
+echo ""
+echo "These directories contain local-only data that refreshes automatically:"
+echo "• CISA KEV database updates"
+echo "• Real-time threat intelligence feeds"
+echo "• Large GitHub repository clones"
+echo "• Partner intelligence collections"
+echo ""
+echo "✅ Process documented in intelligence/scripts/enhanced_intelligence_pipeline.sh"
+echo "🔄 Quick refresh: 5 minutes weekly | Full setup: 20 minutes initial + as needed"
 ```
 
 ---

@@ -57,5 +57,6 @@ dev-debug.log
 tasks.json
 tasks/
 
-# Intelligence external sources (local-only large datasets)
+# Intelligence external sources and current data (local-only large datasets)
 intelligence/external_sources/
+intelligence/current/
