@@ -1,0 +1,28 @@
+# Project Nightingale Comprehensive Codebase Analysis PRD
+## Product Requirements Document for Systematic GTM System Evaluation
+
+### Executive Summary
+Conduct a comprehensive ultrathink analysis of the Project Nightingale codebase to catalog all products, artifacts, templates, and processes, then evaluate their integration with the OT-First engagement methodology and identify gaps in the sales/marketing execution pipeline.
+
+### Project Objectives
+1. Complete Artifact Inventory: Catalog every template, framework, process, and generated content in the repository
+2. OT-First Process Integration Analysis: Map all artifacts to the 5-step OT-First engagement process 
+3. GTM Execution Gap Analysis: Identify missing components for complete sales/marketing automation
+4. Campaign Theme Rationalization: Reconcile the 9-theme system with the stated 2-theme focus (RIA/MDA)
+5. Naming Convention Standardization: Establish consistent naming across all artifacts and processes
+6. Sales Process Optimization: Identify gaps in email templates, nurture sequences, and lead management
+7. Quality Framework Validation: Ensure all components meet executive-level presentation standards
+
+### Technical Requirements
+- Systematic Discovery: Use comprehensive file search across all directories
+- Template Mapping: Map each template to its purpose in the OT-First engagement process
+- Process Flow Analysis: Trace the complete prospect journey from identification to assessment proposal
+- Integration Assessment: Evaluate how Express Attack Briefs integrate into the sales process
+- Quality Standards Review: Assess consistency of naming conventions and presentation standards
+
+### Success Criteria
+- 100% visibility into all existing templates and processes
+- Clear mapping of every component to the OT-First engagement process
+- Identification of all gaps preventing complete sales automation
+- Rationalized approach to campaign themes and naming conventions
+- Actionable plan for completing the GTM execution pipeline

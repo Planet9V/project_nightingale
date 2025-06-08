@@ -2,7 +2,7 @@
 
 ## PARTNER ECOSYSTEM OVERVIEW
 
-### NCC (National Cybersecurity Centre) - Government Coordination Excellence
+### NCC Group - Government Coordination Excellence
 **Core Capabilities:**
 - Federal agency coordination protocols
 - National threat intelligence integration

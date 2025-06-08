@@ -103,7 +103,40 @@
 - **Monthly Updates**: Automated current threat identification
 - **Quality Standards**: Executive accessibility + Technical authority
 
-## 💬 PROMPT TEMPLATES
+## 💬 FRAMEWORK VARIANTS AND DELIVERY SYSTEMS
+
+### **Multi-Variant Template System**
+All key frameworks are available in both **Master** and **Professional** variants to support different engagement contexts and audience requirements.
+
+#### **15-Minute Expert Consultation Framework**
+- **Master Version**: `/templates/15_MINUTE_EXPERT_CONSULTATION_MASTER_FRAMEWORK.md` (23KB, June 7 20:24)
+  - Comprehensive consultation methodology with full threat intelligence integration
+  - Complete industry-specific scripts and conversion frameworks
+- **Professional Variant**: `/templates/15_MINUTE_CONSULTATION_PROFESSIONAL_FRAMEWORK.md` (22KB, June 7 21:03)
+  - Streamlined professional consultation approach
+  - Optimized for rapid deployment and execution
+
+#### **Executive Concierge Reports Framework**
+- **Master Version**: `/templates/EXECUTIVE_CONCIERGE_REPORTS_MASTER_FRAMEWORK.md` (40KB, June 7 20:48)
+  - Complete executive intelligence superiority demonstration framework
+  - Full threat landscape integration with competitive positioning
+- **Professional Variant**: `/templates/EXECUTIVE_CONCIERGE_REPORTS_PROFESSIONAL_FRAMEWORK.md` (28KB, June 7 21:00)
+  - Professional executive report methodology
+  - Focused delivery for efficient implementation
+
+#### **Theme-Specific Case Studies Framework**
+- **Master Version**: `/templates/THEME_SPECIFIC_CASE_STUDIES_MASTER_FRAMEWORK.md`
+  - Comprehensive case study development methodology
+  - Complete theme integration with industry examples
+- **Professional Variant**: `/templates/THEME_SPECIFIC_CASE_STUDIES_PROFESSIONAL_FRAMEWORK.md` (27KB, June 7 21:01)
+  - Streamlined case study creation process
+  - Professional deployment optimization
+
+### **Variant Usage Guidelines**
+- **Master Versions**: Use for comprehensive implementations, training, and complex prospects
+- **Professional Variants**: Use for rapid deployment, standard engagements, and efficient execution
+- **Dual Generation**: Both variants will be generated for each prospect as part of the overall process
+- **Quality Standards**: Both variants maintain executive-level quality with operational excellence positioning
 
 ### **Comprehensive Prompt Library**
 - **Location**: `/templates/prompt_templates/`
@@ -166,13 +199,24 @@ mv prospect_theme.txt prospects/[Account_ID]_[Company_Name]/PROSPECT_THEME.md
 # Naming: [Company]_[Artifact_Type]_Project_Nightingale.md
 ```
 
-### **Template Selection Guide (Enhanced)**
+### **Template Selection Guide (Enhanced with Dual Variants)**
 - **Complete Campaign**: Use PROJECT_NIGHTINGALE_ENHANCED_TEMPLATES.md (baseline)
 - **Theme Specialization**: Add service_themes/[THEME_CODE]_[theme_name].md
 - **Theme Classification**: Use PROSPECT_THEME_CLASSIFICATION.md for assignment
+- **Framework Variants**: Generate both Master and Professional versions for each prospect
+  - **Master Frameworks**: Comprehensive methodology for complex engagements
+  - **Professional Variants**: Streamlined execution for standard deployments
 - **Specific Research**: Reference prospect_research/ examples (61+ files)
 - **Custom Prompts**: Browse prompt_templates/ for specialized prompts
 - **Process Guidance**: Check process/ for workflow instructions
+
+### **Dual Variant Generation Process**
+Each prospect will receive both Master and Professional variants of key frameworks:
+1. **15-Minute Expert Consultation** - Both Master and Professional versions
+2. **Executive Concierge Reports** - Both Master and Professional versions  
+3. **Theme-Specific Case Studies** - Both Master and Professional versions
+4. **Quality Standards**: Both variants maintain executive-level presentation quality
+5. **Usage Context**: Teams can select appropriate variant based on engagement complexity
 
 ### **Service Theme Selection Matrix**
 | **Industry** | **Primary Theme** | **Template File** |
