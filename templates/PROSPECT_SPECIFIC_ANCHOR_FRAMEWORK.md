@@ -27,17 +27,7 @@ PROSPECT-SPECIFIC ANCHOR = Deep OSINT + Threat Intelligence + Tech Stack Analysi
 
 ### **Campaign-Theme-Prospect Matching**
 ```
-ENERGY CAMPAIGN (ITC + SCA Themes):
-├── Consumers Energy → ITC-focused anchor (grid modernization + SCADA systems)
-├── Evergy → SCA-focused anchor (grid safety + protection systems)
-├── Boeing → SCA-focused anchor (aerospace safety + supply chain)
-└── US Steel → ITC-focused anchor (industrial automation + process control)
-
-MANUFACTURING CAMPAIGN (IEC + PLM Themes):
-├── Johnson Controls → IEC-focused anchor (building automation + 62443 compliance)
-├── GE Haier → PLM-focused anchor (product lifecycle + supply chain)
-├── McDonald's → PLM-focused anchor (franchise systems + supply chain)
-└── Port Operations → IEC-focused anchor (maritime systems + process control)
+the two themes
 ```
 
 ---

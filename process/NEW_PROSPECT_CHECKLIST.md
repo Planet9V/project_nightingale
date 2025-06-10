@@ -13,7 +13,9 @@
 
 This checklist ensures 100% completion rate with consistent quality standards for all new Project Nightingale prospects. Each checkbox represents a critical step that must be completed and verified.
 
-**Success Standard**: ✅ All 47 checkboxes completed = 10/10 artifacts generated with executive-level quality
+**Success Standard**: ✅ All 57 checkboxes completed = 10/10 artifacts generated with executive-level quality (Tier 1 Enhanced)
+
+⚠️ **TIER 1 MANDATORY**: This checklist includes mandatory MCP research checkpoints that CANNOT be skipped.
 
 ---
 
@@ -48,9 +50,39 @@ ls -la /home/jim/gtm-campaign-project/prospects/[ACCOUNT_ID]_[Company_Name]/
 
 ---
 
-## 🔍 **PHASE 2: ENHANCED RESEARCH COLLECTION**
+## 🔍 **PHASE 2: MANDATORY TIER 1 MCP RESEARCH COLLECTION**
 
-### ✅ **Step 2.1: Local Knowledge Base Assessment**
+⚠️ **CRITICAL**: This phase is MANDATORY and cannot be skipped. Tier 1 framework requires MCP research integration.
+
+### ✅ **Step 2.1: Mandatory MCP Research Execution (TIER 1)**
+
+#### **MCP Research Compliance Checkpoints**
+- [ ] **MCP Tavily Search #1**: Company cybersecurity + operational technology query executed
+- [ ] **MCP Brave Search #1**: Industrial technology threats + SCADA query executed  
+- [ ] **MCP Fetch**: Company official website content retrieved
+- [ ] **MCP Tavily Search #2**: Current cyber threats + CISA advisories query executed
+- [ ] **MCP Brave Search #2**: Recent cybersecurity incidents query executed
+- [ ] **MCP Tavily Search #3**: Regulatory compliance + industry standards query executed
+- [ ] **MCP Brave Search #3**: Regulatory violations + compliance challenges query executed
+- [ ] **MCP Results Documented**: All research results compiled and integrated
+- [ ] **Current Intelligence Verified**: 2025 threat data confirmed in research results
+- [ ] **Research Quality Target Met**: Minimum 10 MCP search results with current data
+
+**MANDATORY MCP Research Sequence**:
+```bash
+# TIER 1 MANDATORY MCP RESEARCH - NEVER SKIP
+echo "🔍 TIER 1: Executing mandatory MCP research for [Company]..."
+mcp__tavily__tavily-search query="[Company] cybersecurity operational technology infrastructure [industry]"
+mcp__brave__brave_web_search query="[Company] industrial technology security threats SCADA control systems"
+mcp__fetch__fetch_markdown url="[Company Official Website]"
+mcp__tavily__tavily-search query="[Company] [Industry] cyber threats 2025 CISA advisories"
+mcp__brave__brave_web_search query="[Company] recent cybersecurity incidents vulnerabilities"
+mcp__tavily__tavily-search query="[Company] regulatory compliance NERC CIP nuclear safety"
+mcp__brave__brave_web_search query="[Company] regulatory violations fines compliance challenges"
+echo "✅ TIER 1: Mandatory MCP research completed - proceeding with enhanced framework"
+```
+
+### ✅ **Step 2.2: Local Knowledge Base Assessment**
 
 #### **Existing Research Verification**
 - [ ] **Check Prospect Research Folder**: Search `/prospect_research/` for existing company research files

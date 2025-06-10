@@ -66,37 +66,46 @@ cd "/home/jim/gtm-campaign-project/prospects/A-999999_Example_Corporation/"
 
 ---
 
-## 🔍 **PHASE 2: ENHANCED RESEARCH COLLECTION**
+## 🔍 **PHASE 2: MANDATORY TIER 1 MCP RESEARCH COLLECTION**
 
-### **Step 2.1: Execute MCP-Powered Research**
-**Research Collection Sequence**:
+⚠️ **CRITICAL**: MCP research is MANDATORY and cannot be skipped. This is the default framework for ALL prospect artifact generation.
 
-#### **2.1a: Primary OSINT Research**
+### **Step 2.1: Execute Mandatory MCP-Powered Research (TIER 1 DEFAULT)**
+**Research Collection Sequence** (MANDATORY - Not Optional):
+
+#### **2.1a: Primary OSINT Research (MANDATORY TIER 1)**
 ```bash
-# Execute comprehensive search using MCP tools
+# MANDATORY MCP RESEARCH EXECUTION - NEVER SKIP
+echo "🔍 TIER 1: Executing mandatory MCP research..."
 mcp__tavily__tavily-search query="[Company Name] cybersecurity operational technology infrastructure energy sector"
 mcp__brave__brave_web_search query="[Company Name] industrial technology security threats SCADA control systems"
 mcp__fetch__fetch_markdown url="[Company Official Website]"
+echo "✅ TIER 1: Primary research completed"
 ```
 
-#### **2.1b: Enhanced Intelligence Integration**
+#### **2.1b: Enhanced Intelligence Integration (MANDATORY TIER 1)**
 ```bash
-# Current threat intelligence
+# Current threat intelligence - MANDATORY
+echo "🔍 TIER 1: Collecting current threat intelligence..."
 mcp__tavily__tavily-search query="[Company Name] [Industry] cyber threats 2025 CISA advisories"
 mcp__brave__brave_web_search query="[Company Name] recent cybersecurity incidents vulnerabilities"
 
-# Industry-specific intelligence
+# Industry-specific intelligence - MANDATORY
 mcp__tavily__tavily-search query="[Industry] sector cybersecurity threats 2025 NERC CIP FERC"
+echo "✅ TIER 1: Intelligence integration completed"
 ```
 
-#### **2.1c: Regulatory and Compliance Research**
+#### **2.1c: Regulatory and Compliance Research (MANDATORY TIER 1)**
 ```bash
-# Regulatory environment
+# Regulatory environment - MANDATORY
+echo "🔍 TIER 1: Collecting regulatory compliance intelligence..."
 mcp__tavily__tavily-search query="[Company Name] regulatory compliance NERC CIP nuclear safety"
 mcp__brave__brave_web_search query="[Company Name] regulatory violations fines compliance challenges"
+echo "✅ TIER 1: Regulatory research completed"
+echo "🎯 TIER 1: All mandatory MCP research phases complete - ready for artifact generation"
 ```
 
-**Research Quality Target**: 400-600 lines of comprehensive intelligence per research file
+**TIER 1 Research Quality Target**: 400-600 lines of comprehensive intelligence per research file (Enhanced with MCP data)
 
 ### **Step 2.2: Create Research Documentation**
 **File Creation**:

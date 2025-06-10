@@ -18,12 +18,29 @@
 - ✅ **Project Nightingale Mission**: Essential services protection integrated consistently
 - ✅ **Repeatability Assurance**: Processes documented for consistent execution by any user
 
-### **Quality Assurance Scope**
-1. **Prospect Research Standards**: MCP-powered research with local knowledge integration
-2. **Artifact Generation Quality**: Template usage and content standards
-3. **OT-First Process Flow**: Engagement process consistency and effectiveness
-4. **Documentation Standards**: File organization and naming conventions
-5. **Enhancement Integration**: Theme specialization and intelligence pipeline usage
+### **Quality Assurance Scope** (TIER 1 ENHANCED MANDATORY)
+1. **TIER 1 COMPLIANCE VERIFICATION**: MCP research integration mandatory for all artifacts
+2. **Prospect Research Standards**: MCP-powered research with local knowledge integration
+3. **Artifact Generation Quality**: Enhanced template usage and content standards (Tier 1 only)
+4. **OT-First Process Flow**: Engagement process consistency and effectiveness
+5. **Documentation Standards**: File organization and naming conventions
+6. **Enhancement Integration**: Theme specialization and intelligence pipeline usage
+
+## ⚠️ **TIER 1 COMPLIANCE VERIFICATION**
+
+### **Pre-Generation Checklist (MANDATORY)**
+- [ ] **MCP Tavily Search Executed**: Minimum 3 queries completed with results documented
+- [ ] **MCP Brave Search Executed**: Minimum 2 queries completed with current threat data
+- [ ] **Current Threat Intelligence**: 2025 sources identified and integrated
+- [ ] **Enhanced Templates Loaded**: Tier 1 templates ready (not basic templates)
+- [ ] **Theme Specialization Selected**: Primary theme chosen and positioning defined
+
+### **FAIL CONDITIONS** (Restart Required):
+- ❌ **No MCP Research Executed**: Artifact generation without MCP research is non-compliant
+- ❌ **Using Basic Templates**: Only enhanced Tier 1 templates are authorized
+- ❌ **No Current Threat Intelligence**: 2025 threat data integration is mandatory
+- ❌ **No Theme Specialization Applied**: 9-theme framework integration required
+- ❌ **Incomplete Research Foundation**: Minimum 400 lines + MCP enhancement required
 
 ---
 
@@ -31,22 +48,29 @@
 
 ### **Research Collection Requirements**
 
-#### **MCP Tool Usage Standards**
-**Required Research Sequence**:
+#### **MCP Tool Usage Standards (TIER 1 MANDATORY)**
+**Required Research Sequence** (CANNOT BE SKIPPED):
 ```bash
-# Primary OSINT Research
+# MANDATORY TIER 1 MCP RESEARCH EXECUTION
+echo "🔍 TIER 1: Initiating mandatory MCP research protocol..."
+
+# Primary OSINT Research - MANDATORY
 mcp__tavily__tavily-search query="[Company] cybersecurity operational technology infrastructure [industry]"
 mcp__brave__brave_web_search query="[Company] industrial technology security threats SCADA control systems"
 mcp__fetch__fetch_markdown url="[Company Official Website]"
 
-# Enhanced Intelligence Integration  
+# Enhanced Intelligence Integration - MANDATORY
 mcp__tavily__tavily-search query="[Company] [Industry] cyber threats 2025 CISA advisories"
 mcp__brave__brave_web_search query="[Company] recent cybersecurity incidents vulnerabilities"
 
-# Regulatory and Compliance Research
+# Regulatory and Compliance Research - MANDATORY
 mcp__tavily__tavily-search query="[Company] regulatory compliance NERC CIP nuclear safety"
 mcp__brave__brave_web_search query="[Company] regulatory violations fines compliance challenges"
+
+echo "✅ TIER 1: All mandatory MCP research queries completed - proceeding with enhanced artifact generation"
 ```
+
+⚠️ **MANDATORY ENFORCEMENT**: This research sequence MUST be executed before any artifact generation begins.
 
 #### **Research Quality Gates**
 - [ ] **Minimum Research Length**: 400-600 lines of comprehensive intelligence

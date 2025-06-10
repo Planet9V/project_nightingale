@@ -14,12 +14,14 @@
 
 This workflow provides the complete, systematic process for generating all 10 Project Nightingale artifacts using enhanced templates, comprehensive research integration, and professional quality assurance. The system has been validated through 49/49 successful prospect completions delivering 630+ executive-level artifacts with consistent tri-partner positioning.
 
-**Workflow Capabilities**:
+**Workflow Capabilities** (TIER 1 ENHANCED FRAMEWORK - MANDATORY DEFAULT):
 - **Complete 10-Artifact Framework**: Standardized deliverable suite for every prospect
-- **Enhanced Template Integration**: Tier 1 optimization with 40% efficiency improvement
-- **Intelligence Integration**: 100,406+ sources with current threat intelligence
+- **MANDATORY TIER 1**: MCP research + enhanced templates (ALWAYS USE - No exceptions)
+- **Intelligence Integration**: 100,406+ sources with current threat intelligence + real-time MCP data
 - **Quality Assurance**: 66-checkpoint verification system for executive presentation
 - **Theme Specialization**: 9-service theme customization for competitive positioning
+
+⚠️ **CRITICAL**: This workflow ONLY supports Tier 1 enhanced framework. Basic artifact generation is not available.
 
 ---
 
@@ -41,15 +43,18 @@ Every Project Nightingale prospect receives exactly 10 artifacts following this 
 | **09** | **M&A Due Diligence Analysis** | Corporate development, investment teams | Strategic transaction support and risk assessment |
 | **10** | **Executive Concierge Report** | C-level executives, board members | Executive summary and strategic next steps |
 
-### **ENHANCED TEMPLATE INTEGRATION**
-All artifacts utilize enhanced templates from: [`/templates/PROJECT_NIGHTINGALE_ENHANCED_TEMPLATES.md`](/home/jim/gtm-campaign-project/templates/PROJECT_NIGHTINGALE_ENHANCED_TEMPLATES.md)
+### **MANDATORY TIER 1 ENHANCED TEMPLATE INTEGRATION**
+⚠️ **MANDATORY**: All artifacts MUST utilize enhanced templates from: [`/templates/PROJECT_NIGHTINGALE_ENHANCED_TEMPLATES.md`](/home/jim/gtm-campaign-project/templates/PROJECT_NIGHTINGALE_ENHANCED_TEMPLATES.md)
 
-**Template Enhancement Features**:
+**Tier 1 Enhancement Features** (ALL MANDATORY):
+- **Mandatory MCP Research**: Real-time Tavily + Brave search integration before generation
 - **Tier 1 Optimization**: 40% efficiency improvement through optimized structure
 - **Theme Customization**: 9-service theme specialization integration
-- **Intelligence Integration**: Current threat intelligence and vulnerability data
+- **Intelligence Integration**: Current threat intelligence and vulnerability data + MCP research
 - **Professional Formatting**: Executive-level presentation standards
 - **Tri-Partner Positioning**: Consistent NCC OTCE + Dragos + Adelard integration
+
+⚠️ **ENFORCEMENT**: There is no basic template option - only enhanced Tier 1 templates are supported.
 
 ---
 
@@ -60,20 +65,23 @@ All artifacts utilize enhanced templates from: [`/templates/PROJECT_NIGHTINGALE_
 **Timeline**: 15 minutes  
 **Quality Gate**: All prerequisites met and validated  
 
-#### **1.1.1 Required Prerequisites Checklist**
-- [ ] **Comprehensive Research**: 400+ lines of prospect intelligence completed
+#### **1.1.1 Required Prerequisites Checklist (TIER 1 MANDATORY)**
+- [ ] **MCP Research Completed**: Minimum 5 MCP queries executed (Tavily + Brave)
+- [ ] **Comprehensive Research**: 400+ lines of prospect intelligence completed + MCP enhancement
 - [ ] **Account Manager Assignment**: Territory and expertise alignment confirmed
 - [ ] **Service Theme Selection**: Primary theme selected and positioning defined
 - [ ] **Prospect Folder**: Standard folder structure created and configured
-- [ ] **Template Access**: Enhanced templates available and current
-- [ ] **Intelligence Sources**: Current threat data and vulnerability intelligence ready
+- [ ] **Enhanced Template Access**: Enhanced Tier 1 templates loaded (not basic templates)
+- [ ] **Intelligence Sources**: Current threat data + vulnerability intelligence + MCP results ready
 
-#### **1.1.2 Quality Validation Requirements**
-- **Research Quality**: Minimum 400 lines with 5+ independent sources
-- **Intelligence Currency**: 30% of sources from current year
-- **Technical Accuracy**: OT/ICS infrastructure details verified
+#### **1.1.2 Quality Validation Requirements (TIER 1 ENHANCED)**
+- **MCP Research Quality**: Minimum 5 MCP queries with current results integration
+- **Research Quality**: Minimum 400 lines with 5+ independent sources + MCP enhancement
+- **Intelligence Currency**: 30% of sources from current year + real-time MCP data
+- **Technical Accuracy**: OT/ICS infrastructure details verified with current threat correlation
 - **Strategic Relevance**: Clear alignment with Project Nightingale mission
 - **Competitive Positioning**: Market analysis and differentiation opportunities identified
+- **Tier 1 Compliance**: Enhanced templates and MCP research integration confirmed
 
 ### **STEP 1.2: ARTIFACT GENERATION PLANNING**
 **Objective**: Plan optimal sequence and approach for artifact creation  

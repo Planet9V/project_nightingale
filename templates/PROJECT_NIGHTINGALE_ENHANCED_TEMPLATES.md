@@ -1,9 +1,20 @@
 # Project Nightingale: Enhanced Artifact Templates
+## ⚠️ MANDATORY TIER 1 USAGE PROTOCOL
+
+**THIS IS NOT OPTIONAL**: Every artifact generation MUST use:
+1. **MCP Research First**: mcp__tavily__tavily-search + mcp__brave__brave_web_search (minimum 5 queries)
+2. **Current Intelligence**: 2025 threat data integration with real-time correlation
+3. **Enhanced Templates**: This framework (not basic templates - basic templates are disabled)
+4. **Theme Integration**: 9-theme specialization positioning throughout all artifacts
+5. **Quality Standards**: 67% Enhanced EAB methodology integration
+
+**⚠️ CRITICAL ENFORCEMENT**: If you are NOT using MCP research tools before generating artifacts, you are violating the mandatory Tier 1 protocol.
+
 ## Tier 1 Optimization Implementation
 
 **Created**: June 2025  
-**Purpose**: 30-40% efficiency improvement through standardized templates  
-**Integration**: Dragos 5 intelligence assets + tri-partner positioning
+**Purpose**: 30-40% efficiency improvement through standardized templates + MCP research integration  
+**Integration**: Dragos 5 intelligence assets + tri-partner positioning + real-time MCP intelligence
 
 ---
 
