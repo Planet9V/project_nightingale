@@ -44,10 +44,10 @@ The user requested a comprehensive review and enhancement of Project Seldon with
 - [ ] Analyze prompt chaining latency and error propagation
 - [ ] Evaluate MCP server failover and redundancy
 - [ ] Review data versioning conflict resolution
-- [ ] Assess OpenSPG integration complexity
+- [ ] Analyze OpenSPG codebase for techniques and innovations to adopt
 
 ### Specific Focus Areas Mentioned:
-1. **OpenSPG Integration** - This was specifically called out as needing attention
+1. **OpenSPG Exploration** - Study their codebase for techniques, approaches, and reusable innovations (NOT integration)
 2. **Data Synchronization** - Neo4j-Pinecone sync architecture needs detailed review
 3. **Data Versioning Conflict Resolution** - Critical for maintaining consistency across systems
 4. **Performance Optimization** - 6-hop query optimization in Neo4j
@@ -59,17 +59,24 @@ The user requested a comprehensive review and enhancement of Project Seldon with
 
 **Start with**: Project Seldon comprehensive review and enhancement
 - Target: 20% increase in architectural detail
-- Focus: OpenSPG integration and data synchronization
+- Focus: Learn from OpenSPG codebase (exploration, not integration) and improve data synchronization
 - Method: Parallel research using Task agents for efficiency
+- Goal: Leverage open source innovations to enhance our architecture
 
 **Suggested First Command**:
 ```
 Claude, please continue the Project Seldon enhancement from the previous session. Start by:
 1. Reading SESSION_HANDOFF_JUNE_12_2025.md for context
 2. Using Task agents to research the 10 identified areas in parallel
-3. Focus especially on OpenSPG integration and Neo4j-Pinecone synchronization
-4. Enhance Project Seldon documentation by 20% based on findings
+3. For OpenSPG: Explore their codebase to learn techniques and find reusable innovations (NOT integrating)
+4. Focus on Neo4j-Pinecone synchronization and data versioning conflict resolution
+5. Enhance Project Seldon documentation by 20% based on findings
 ```
+
+**Important Clarification**: 
+- OpenSPG is for LEARNING and potentially borrowing techniques/code, not integration
+- This is an exploratory session to improve Project Seldon using open source innovations
+- Look for clever approaches, algorithms, or patterns we can adapt
 
 ---
 
