@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@pinecone-database/mcp": "^0.1.14",
+    "graphlit-mcp-server": "^1.0.20250611010",
+    "neo4j-mcpserver": "^1.0.6"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^6.1.0",
+    "neo4j-driver": "^5.28.1"
+  }
+}

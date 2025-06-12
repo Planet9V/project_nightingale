@@ -46,20 +46,6 @@
                 "PINECONE_ENVIRONMENT": "us-east-1",
                 "PINECONE_INDEX_NAME": "nightingale"
             }
-        },
-        "neo4j": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "--package=neo4j-mcpserver",
-                "neo4j-mcpserver"
-            ],
-            "env": {
-                "NEO4J_URI": "neo4j+s://82dcab45.databases.neo4j.io",
-                "NEO4J_USER": "neo4j",
-                "NEO4J_PASSWORD": "0Vd7DG61C472nBRCysOtD3NCQjPDRmpL6SFlm-K7XSE",
-                "NEO4J_DATABASE": "neo4j"
-            }
         }
     }
 }
