@@ -60,33 +60,6 @@
             "env": {
                 "TAVILY_API_KEY": "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"
             }
-        },
-        "jina-ai": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "--package=jina-ai-mcp-server",
-                "jina-ai-mcp-server"
-            ],
-            "env": {}
-        },
-        "sequential-thinking": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "--package=@modelcontextprotocol/server-sequential-thinking",
-                "@modelcontextprotocol/server-sequential-thinking"
-            ],
-            "env": {}
-        },
-        "antv-charts": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "--package=@antv/mcp-server-chart",
-                "@antv/mcp-server-chart"
-            ],
-            "env": {}
         }
     }
 }

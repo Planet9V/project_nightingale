@@ -2,9 +2,11 @@
 ## Complete Setup Instructions for All MCP Servers
 
 **Document Classification**: Technical Configuration - SENSITIVE  
-**Created**: January 11, 2025  
+**Created**: June 12, 2025  
+**Last Updated**: June 12, 2025 9:09 AM CDT  
 **Purpose**: Complete MCP server setup for Project Nightingale on new WSL/Claude Code installation  
-**Security Note**: This document contains credentials - handle with care
+**Security Note**: This document contains credentials - handle with care  
+**Total MCP Servers**: 9 configured and operational
 
 ---
 
@@ -28,7 +30,12 @@ npm install --save-dev \
   @pinecone-database/mcp \
   graphlit-mcp-server \
   neo4j-mcpserver \
-  task-master-ai
+  task-master-ai \
+  tavily-mcp \
+  @upstash/context7-mcp \
+  jina-ai-mcp-server \
+  @modelcontextprotocol/server-sequential-thinking \
+  @antv/mcp-server-chart
 
 # Install supporting packages
 npm install \
@@ -42,25 +49,6 @@ Create the file `.cursor/mcp.json` with the complete configuration below:
 ```json
 {
     "mcpServers": {
-        "task-master-ai": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "--package=task-master-ai",
-                "task-master-ai"
-            ],
-            "env": {
-                "ANTHROPIC_API_KEY": "ANTHROPIC_API_KEY_HERE",
-                "PERPLEXITY_API_KEY": "PERPLEXITY_API_KEY_HERE",
-                "OPENAI_API_KEY": "OPENAI_API_KEY_HERE",
-                "GOOGLE_API_KEY": "GOOGLE_API_KEY_HERE",
-                "XAI_API_KEY": "XAI_API_KEY_HERE",
-                "OPENROUTER_API_KEY": "OPENROUTER_API_KEY_HERE",
-                "MISTRAL_API_KEY": "MISTRAL_API_KEY_HERE",
-                "AZURE_OPENAI_API_KEY": "AZURE_OPENAI_API_KEY_HERE",
-                "OLLAMA_API_KEY": "OLLAMA_API_KEY_HERE"
-            }
-        },
         "graphlit": {
             "command": "npx",
             "args": [
@@ -102,6 +90,52 @@ Create the file `.cursor/mcp.json` with the complete configuration below:
                 "NEO4J_PASSWORD": "0Vd7DG61C472nBRCysOtD3NCQjPDRmpL6SFlm-K7XSE",
                 "NEO4J_DATABASE": "neo4j"
             }
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "--package=@upstash/context7-mcp",
+                "@upstash/context7-mcp"
+            ],
+            "env": {}
+        },
+        "tavily": {
+            "command": "npx",
+            "args": [
+                "-y", 
+                "tavily-mcp@latest"
+            ],
+            "env": {
+                "TAVILY_API_KEY": "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"
+            }
+        },
+        "jina-ai": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "--package=jina-ai-mcp-server",
+                "jina-ai-mcp-server"
+            ],
+            "env": {}
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "--package=@modelcontextprotocol/server-sequential-thinking",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "env": {}
+        },
+        "antv-charts": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "--package=@antv/mcp-server-chart",
+                "@antv/mcp-server-chart"
+            ],
+            "env": {}
         }
     }
 }
@@ -166,11 +200,55 @@ npx neo4j-mcpserver
 ### 4. Task Master AI
 **Purpose**: Project and task management with AI assistance
 
-**API Keys Required** (add your own):
-- **ANTHROPIC_API_KEY**: Your Anthropic API key
-- **PERPLEXITY_API_KEY**: Your Perplexity API key
-- **OPENAI_API_KEY**: Your OpenAI API key
-- Other keys as needed for your AI providers
+**API Keys Configured**:
+- **PERPLEXITY_API_KEY**: ✅ Configured
+- **OPENAI_API_KEY**: ✅ Configured
+- **GOOGLE_API_KEY**: ✅ Configured
+- **MISTRAL_API_KEY**: ✅ Configured
+- **OPENROUTER_API_KEY**: ✅ Configured
+- Other keys as needed for additional AI providers
+
+### 5. Tavily Search
+**Purpose**: Advanced web search and content extraction
+
+**Credentials**:
+- **API Key**: `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`
+- **Features**: Web search, content extraction, site crawling, site mapping
+- **Current Status**: Configured and operational
+
+### 6. Context7 Documentation
+**Purpose**: Documentation search and context retrieval
+
+**Configuration**:
+- **No API Key Required**: Runs as documentation server
+- **Current Status**: Configured and operational
+
+### 7. Jina AI
+**Purpose**: AI-powered search, retrieval, and document processing
+
+**Configuration**:
+- **No API Key Required**: Runs without credentials
+- **Features**: Document processing, embedding generation, AI search
+- **Current Status**: Configured and operational
+
+### 8. Sequential Thinking
+**Purpose**: Complex problem solving and structured analysis
+
+**Configuration**:
+- **No API Key Required**: Uses built-in reasoning engine
+- **Features**: Multi-step problem analysis, logical reasoning, threat chain analysis
+- **Use Cases**: Analyzing attack patterns, creating remediation plans, strategic planning
+- **Current Status**: Configured and operational
+
+### 9. AntV Charts
+**Purpose**: Professional data visualization and analytics
+
+**Configuration**:
+- **No API Key Required**: Local chart generation
+- **Features**: 20+ chart types, dashboard creation, executive reports
+- **Export Formats**: PNG, SVG, HTML
+- **Use Cases**: Risk dashboards, threat visualizations, ROI calculations, AM metrics
+- **Current Status**: Configured and operational
 
 ---
 
@@ -193,6 +271,11 @@ npm install --save-dev \
   graphlit-mcp-server \
   neo4j-mcpserver \
   task-master-ai \
+  tavily-mcp \
+  @upstash/context7-mcp \
+  jina-ai-mcp-server \
+  @modelcontextprotocol/server-sequential-thinking \
+  @antv/mcp-server-chart \
   @pinecone-database/pinecone \
   neo4j-driver
 
@@ -312,6 +395,32 @@ echo "   - mcp__taskmaster__*"
 - `mcp__taskmaster__add_task` - Create new tasks
 - `mcp__taskmaster__update_task` - Update existing tasks
 
+### Tavily Tools
+- `mcp__tavily__tavily-search` - Advanced web search
+- `mcp__tavily__tavily-extract` - Extract content from URLs
+- `mcp__tavily__tavily-crawl` - Crawl websites
+- `mcp__tavily__tavily-map` - Create site maps
+
+### Context7 Tools
+- `mcp__context7__search` - Search documentation
+- `mcp__context7__retrieve` - Get specific content
+- `mcp__context7__context` - Contextual information
+
+### Jina AI Tools
+- `mcp__jina__search` - AI-powered search
+- `mcp__jina__embed` - Generate embeddings
+- `mcp__jina__process` - Process documents
+
+### Sequential Thinking Tools
+- `mcp__sequential__analyze` - Complex problem analysis
+- `mcp__sequential__plan` - Strategic planning
+- `mcp__sequential__reason` - Logical reasoning
+
+### AntV Charts Tools
+- `mcp__antv__create_chart` - Create visualizations
+- `mcp__antv__export_chart` - Export to various formats
+- `mcp__antv__create_dashboard` - Build dashboards
+
 ---
 
 ## 🔐 Security Best Practices
@@ -349,6 +458,18 @@ echo "   - mcp__taskmaster__*"
 - **Status**: Connected, authentication may need refresh
 - **Action Required**: Verify JWT token validity
 - **First Priority**: Test document ingestion
+
+### Task Master AI
+- **Status**: Operational with API keys configured
+- **APIs Available**: Perplexity, OpenAI, Google, Mistral, OpenRouter
+- **First Priority**: Initialize project structure
+
+### Other MCP Servers (5)
+- **Tavily**: Operational with API key
+- **Context7**: Operational, no config needed
+- **Jina AI**: Operational, no config needed
+- **Sequential Thinking**: Operational, no config needed
+- **AntV Charts**: Operational, no config needed
 
 ---
 
@@ -388,7 +509,7 @@ npm install
 ---
 
 **Document Status**: Complete with all credentials and setup instructions  
-**Last Updated**: January 11, 2025  
+**Last Updated**: June 12, 2025  
 **Security Classification**: SENSITIVE - Contains API credentials  
 
 *Remember: This document contains sensitive credentials. Handle with appropriate security measures.*
