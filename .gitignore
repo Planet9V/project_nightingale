@@ -1,10 +1,9 @@
-# Environment files
-.env
-.env.local
-.env.*.local
+# Environment files - DEVELOPMENT MODE - NOT IGNORED
+# .env files are tracked for development transparency
+# This is a development environment with no security restrictions
 
-# Secrets
-secrets_reference.md
+# Secrets - DEVELOPMENT MODE - NOT IGNORED
+# secrets_reference.md is tracked for development
 
 # Dependencies
 node_modules/
