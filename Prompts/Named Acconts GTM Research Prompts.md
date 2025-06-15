@@ -435,7 +435,7 @@ Displacement opportunity analysis
 
 ## GTM Analysis Part 3: Strategic Sales Approach & Battle Card {#gtm-analysis-part-3:-strategic-sales-approach-&-battle-card}
 
-**TARGET ORGANIZATION: \[Vistra Corp\]**
+**TARGET ORGANIZATION: \[TARGET ORGANIZATION\]**
 
 You are conducting the third part of a three-part comprehensive Go-to-Market (GTM) analysis for NCC Group's sales team. This third part focuses on developing an actionable sales strategy and detailed battle card for approaching \[TARGET\_ORGANIZATION\].
 
@@ -755,3 +755,5 @@ Compile your recommendations into a comprehensive Strategic Sales Approach & Bat
 * Tailor all content specifically to \[TARGET\_ORGANIZATION\]'s industry, business context, and challenges.
 
 # Prompts for Prospecting RFI and RFP
+
+Make prompts here for gathering informtoin on RFP and RFI mechanisms of ((subject))

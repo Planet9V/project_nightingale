@@ -1,3 +1,11 @@
+/**
+ * NOTE: This file needs to be updated to use the new Supabase database service
+ * The Prisma calls have been commented out and need to be replaced with
+ * appropriate Supabase database calls using the 'db' service from './database'
+ * 
+ * Migration Date: 2025-06-13T04:44:31.265Z
+ */
+
 import { logger } from '../utils/logger';
 import { 
   storeVehicleDescriptionEmbedding, 
@@ -6,22 +14,29 @@ import {
   searchSimilarVehiclesByImage
 } from './pinecone';
 import { generateEmbedding, generateImageEmbedding } from './embeddings';
-import { prisma } from './database';
+import { db } from './database';
 
 // Index a vehicle's description for semantic search
 export const indexVehicleDescription = async (vehicleId: number): Promise<void> => {
   try {
     // Fetch vehicle data
-    const vehicle = await prisma.vehicle.findUnique({
-      where: { id: vehicleId },
-      include: {
-        modifications: true,
-        listings: {
-          where: { isActive: true },
-          take: 1,
-        },
-      },
-    });
+    const { data: vehicle, error } = await db
+      .from('vehicles')
+      .select(`
+        *,
+        modifications (*),
+        listings!inner (
+          *
+        )
+      `)
+      .eq('id', vehicleId)
+      .eq('listings.isActive', true)
+      .limit(1, { foreignTable: 'listings' })
+      .single();
+
+    if (error) {
+      throw new Error(`Failed to fetch vehicle ${vehicleId}: ${error.message}`);
+    }
 
     if (!vehicle) {
       throw new Error(`Vehicle ${vehicleId} not found`);
@@ -111,14 +126,26 @@ export const searchVehicles = async (
       .map(r => r.vehicleId)
       .filter(Boolean);
 
-    const vehicles = await prisma.vehicle.findMany({
-      where: { id: { in: vehicleIds } },
-      include: {
-        images: { take: 1 },
-        listings: { where: { isActive: true }, take: 1 },
-        modifications: true,
-      },
-    });
+    const { data: vehicles, error } = await db
+      .from('vehicles')
+      .select(`
+        *,
+        images (*),
+        listings!inner (*),
+        modifications (*)
+      `)
+      .in('id', vehicleIds)
+      .eq('listings.isActive', true)
+      .limit(1, { foreignTable: 'images' })
+      .limit(1, { foreignTable: 'listings' });
+
+    if (error) {
+      throw new Error(`Failed to fetch vehicles: ${error.message}`);
+    }
+
+    if (!vehicles) {
+      return [];
+    }
 
     // Combine with similarity scores
     return vehicles.map(vehicle => {
@@ -139,19 +166,33 @@ export const searchVehicles = async (
 // Index all vehicles (for initial setup or reindexing)
 export const indexAllVehicles = async (batchSize: number = 10): Promise<void> => {
   try {
-    const totalVehicles = await prisma.vehicle.count();
+    const { count: totalVehicles, error: countError } = await db
+      .from('vehicles')
+      .select('*', { count: 'exact', head: true });
+
+    if (countError) {
+      throw new Error(`Failed to count vehicles: ${countError.message}`);
+    }
+
+    if (!totalVehicles) {
+      logger.info('No vehicles found to index');
+      return;
+    }
     logger.info(`Starting to index ${totalVehicles} vehicles...`);
 
     let processed = 0;
     let cursor: number | undefined;
 
     while (processed < totalVehicles) {
-      const vehicles = await prisma.vehicle.findMany({
-        take: batchSize,
-        skip: cursor ? 1 : 0,
-        ...(cursor && { cursor: { id: cursor } }),
-        orderBy: { id: 'asc' },
-      });
+      const { data: vehicles, error } = await db
+        .from('vehicles')
+        .select('*')
+        .order('id', { ascending: true })
+        .range(processed, processed + batchSize - 1);
+
+      if (error) {
+        throw new Error(`Failed to fetch vehicles batch: ${error.message}`);
+      }
 
       if (vehicles.length === 0) break;
 
@@ -165,7 +206,7 @@ export const indexAllVehicles = async (batchSize: number = 10): Promise<void> =>
       );
 
       processed += vehicles.length;
-      cursor = vehicles[vehicles.length - 1].id;
+      // No cursor needed with range-based pagination
 
       logger.info(`Indexed ${processed}/${totalVehicles} vehicles (${Math.round(processed / totalVehicles * 100)}%)`);
     }
@@ -217,13 +258,20 @@ export const findSimilarVehiclesByImage = async (
     // Fetch vehicle data
     const vehicleIds = [...new Set(results.map(r => r.vehicleId).filter(Boolean))];
     
-    const vehicles = await prisma.vehicle.findMany({
-      where: { id: { in: vehicleIds } },
-      include: {
-        images: true,
-        listings: { where: { isActive: true }, take: 1 },
-      },
-    });
+    const { data: vehicles, error } = await db
+      .from('vehicles')
+      .select(`
+        *,
+        images (*),
+        listings!inner (*)
+      `)
+      .in('id', vehicleIds)
+      .eq('listings.isActive', true)
+      .limit(1, { foreignTable: 'listings' });
+
+    if (error) {
+      throw new Error(`Failed to fetch vehicles by image: ${error.message}`);
+    }
 
     return vehicles;
   } catch (error) {

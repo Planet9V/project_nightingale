@@ -46,15 +46,16 @@
             "command": "npx",
             "args": [
                 "-y",
-                "--package=@upstash/context7-mcp",
-                "@upstash/context7-mcp"
+                "@upstash/context7-mcp@latest"
             ],
-            "env": {}
+            "env": {},
+            "disabled": false,
+            "autoApprove": ["get-library-docs", "resolve-library-id"]
         },
         "tavily": {
             "command": "npx",
             "args": [
-                "-y", 
+                "-y",
                 "tavily-mcp@latest"
             ],
             "env": {
@@ -68,7 +69,9 @@
                 "--package=jina-ai-mcp-server",
                 "jina-ai-mcp-server"
             ],
-            "env": {}
+            "env": {
+                "JINA_API_KEY": "jina_22fcccb12b074e1e8031ad132783af842yMCjxeInP4j_Ncx31_5LAPEdt0q"
+            }
         },
         "sequential-thinking": {
             "command": "npx",
@@ -87,6 +90,57 @@
                 "@antv/mcp-server-chart"
             ],
             "env": {}
+        },
+        "task-master-ai": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "--package=task-master-ai",
+                "task-master-ai"
+            ],
+            "env": {
+                "ANTHROPIC_API_KEY": "ANTHROPIC_API_KEY_HERE",
+                "PERPLEXITY_API_KEY": "PERPLEXITY_API_KEY_HERE",
+                "OPENAI_API_KEY": "OPENAI_API_KEY_HERE",
+                "GOOGLE_API_KEY": "GOOGLE_API_KEY_HERE",
+                "XAI_API_KEY": "XAI_API_KEY_HERE",
+                "OPENROUTER_API_KEY": "OPENROUTER_API_KEY_HERE",
+                "MISTRAL_API_KEY": "MISTRAL_API_KEY_HERE",
+                "AZURE_OPENAI_API_KEY": "AZURE_OPENAI_API_KEY_HERE",
+                "OLLAMA_API_KEY": "OLLAMA_API_KEY_HERE"
+            }
+        },
+        "supermemory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "supermemoryai-supermemory-mcp@latest"
+            ],
+            "env": {},
+            "disabled": false,
+            "autoApprove": ["add_memory", "get_memories", "search_memories", "delete_memory"]
+        },
+        "knowledge-graph-memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ],
+            "env": {
+                "MEMORY_FILE_PATH": "/home/jim/gtm-campaign-project/.mcp-memory/knowledge-graph.jsonl"
+            },
+            "disabled": false,
+            "autoApprove": [
+                "create_entities",
+                "create_relations",
+                "add_observations",
+                "delete_entities",
+                "delete_observations",
+                "delete_relations",
+                "read_graph",
+                "search_nodes",
+                "open_nodes"
+            ]
         }
     }
 }

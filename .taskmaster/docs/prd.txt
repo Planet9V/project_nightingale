@@ -1,0 +1,97 @@
+Project Seldon ETL Pipeline - Product Requirements Document
+
+## Executive Summary
+Build a production-ready ETL (Extract, Transform, Load) pipeline to process Project Nightingale's 670+ intelligence artifacts, starting with Annual Cyber Reports 2023-2025. The pipeline will extract intelligence from markdown documents, generate embeddings using Jina AI, and populate Supabase, Pinecone, and Neo4j databases with full citation support.
+
+## Problem Statement
+Project Nightingale has generated 670+ static intelligence artifacts that need to be transformed into a searchable, AI-powered intelligence system. Currently, these documents exist as individual markdown files without semantic search, relationship mapping, or cross-reference capabilities.
+
+## Goals
+1. Process all Annual Cyber Reports (2023-2025) into structured intelligence data
+2. Generate vector embeddings for semantic search across all documents
+3. Create knowledge graphs showing relationships between threats, vendors, and sectors
+4. Implement character-level citation tracking for source attribution
+5. Enable real-time intelligence queries across all processed documents
+
+## Success Criteria
+- Process 200+ Annual Cyber Reports without data loss
+- Achieve 99% accuracy in citation tracking
+- Generate embeddings for 10,000+ document chunks
+- Create relationship graphs with 1,000+ entities
+- Support sub-second query response times
+
+## Technical Requirements
+
+### Data Processing
+- Extract content from markdown files preserving structure
+- Parse document metadata (vendor, year, report type)
+- Chunk documents intelligently (1000-2000 characters with overlap)
+- Track exact character positions for citations
+
+### Jina AI Integration
+- Use jina-embeddings-v2-base-en for document embeddings
+- Implement rate limiting (2000 RPM for embeddings)
+- Use jina-reranker-v1-base-en for result optimization
+- Leverage jina-classifier-v1-base-en for categorization
+
+### Database Population
+- Supabase: Store document metadata and chunks
+- Pinecone: Store vector embeddings (768 dimensions)
+- Neo4j: Create knowledge graphs of entities and relationships
+
+### Features
+- Batch processing with progress tracking
+- Error handling and retry logic
+- Parallel processing for performance
+- Comprehensive logging and monitoring
+- Citation lookup from vectors to source documents
+
+## User Stories
+1. As an analyst, I want to search across all cyber reports using natural language
+2. As a researcher, I want to see exact citations for any intelligence claim
+3. As an executive, I want to understand threat relationships across vendors
+4. As a developer, I want to query the intelligence via APIs
+
+## Implementation Phases
+Phase 1: Core ETL Pipeline (Current)
+- Document extraction service
+- Jina AI integration with rate limiting
+- Database schema and connections
+- Basic processing of 2025 reports
+
+Phase 2: Full Processing
+- Process all 200+ annual reports
+- Implement citation lookup service
+- Add monitoring and metrics
+- Performance optimization
+
+Phase 3: Intelligence APIs
+- RESTful query endpoints
+- GraphQL interface
+- Real-time streaming updates
+- Advanced analytics
+
+## Technical Architecture
+- TypeScript with strict typing
+- Node.js runtime environment
+- AWS S3 for document storage
+- Redis for caching and queues
+- Docker containerization
+
+## Constraints
+- Do not delete or move original documents
+- Maintain backward compatibility
+- Respect API rate limits
+- Ensure data privacy and security
+
+## Timeline
+- Phase 1: 1 day (Today)
+- Phase 2: 3 days
+- Phase 3: 1 week
+
+## Dependencies
+- Jina AI API access
+- Supabase database
+- Pinecone vector database
+- Neo4j graph database
+- AWS S3 bucket access

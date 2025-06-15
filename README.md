@@ -25,9 +25,24 @@ All API keys are pre-configured. See `CLAUDE.md` for complete MCP documentation.
 
 ## 📁 Project Structure
 
+### Core Project Files
+- **CLAUDE.md** - Instructions for Claude Code development
+- **PROJECT_NIGHTINGALE_MASTER_STATUS_TRACKER.md** - Single source of truth for project status
+- **CURRENT_PROJECT_STATUS.md** - Current development state
+- **SESSION_HANDOFF_JUNE_13_2025.md** - Latest session context
+
+### Major Components
+- **Project_Seldon/** - Advanced AI intelligence architecture (psychohistory-inspired)
+- **src/** - TypeScript source code and services
+- **supabase/** - Database schema and configuration
+- **examples/** - Code usage examples and patterns
+- **process/** - Workflow processes and MCP server configuration
+- **project_management/** - Migration tracking and project planning
+
 ### Campaign Materials
-- `campaigns/` - Marketing campaigns and templates
-- `Landing Pages.md` - Landing page content and strategies
+- **prospects/** - Prospect research and intelligence reports
+- **templates/** - Campaign templates and frameworks
+- **landing_pages_2025/** - Landing page content and strategies
 
 ### Intelligence & Research
 - `Annual_cyber_reports/` - Cybersecurity reports by year (2021-2025)

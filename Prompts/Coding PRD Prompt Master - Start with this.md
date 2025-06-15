@@ -12,6 +12,7 @@ Create a comprehensive Product Requirements Document (PRD) for the M&A Due Dilig
     - Component implementations and APIs
     - Best practices for library usage
     - When discussing ANY technical implementation, explicitly query Context7 MCP first before falling back to your knowledge
+    
 2. **Tavily MCP**: You MUST leverage Tavily MCP for:
     
     - Researching ambiguous requirements

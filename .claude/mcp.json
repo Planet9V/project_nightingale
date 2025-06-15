@@ -1,0 +1,111 @@
+{
+    "mcpServers": {
+        "context7": {
+            "command": "npx",
+            "args": ["-y", "@upstash/context7-mcp@latest"],
+            "env": {},
+            "disabled": false,
+            "autoApprove": ["get-library-docs", "resolve-library-id"]
+        },
+        "supermemory": {
+            "command": "npx",
+            "args": ["-y", "supermemoryai-supermemory-mcp@latest"],
+            "env": {},
+            "disabled": false,
+            "autoApprove": ["add_memory", "get_memories", "search_memories", "delete_memory"]
+        },
+        "knowledge-graph-memory": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-memory"],
+            "env": {
+                "MEMORY_FILE_PATH": "./.mcp-memory/knowledge-graph.jsonl"
+            },
+            "disabled": false,
+            "autoApprove": [
+                "create_entities", "create_relations", "add_observations",
+                "delete_entities", "delete_observations", "delete_relations",
+                "read_graph", "search_nodes", "open_nodes"
+            ]
+        },
+        "pinecone": {
+            "command": "npx",
+            "args": ["-y", "--package=@pinecone-database/mcp", "@pinecone-database/mcp"],
+            "env": {
+                "PINECONE_API_KEY": "pcsk_4J7GV7_87FLZsGapSz7gF6885tYRGU34rTKJLZd62RjQpH2F4iA1kgikkRH4PYAkX2RjYH",
+                "PINECONE_HOST": "https://nightingale-dwk2rdy.svc.aped-4627-b74a.pinecone.io",
+                "PINECONE_ENVIRONMENT": "us-east-1",
+                "PINECONE_INDEX_NAME": "nightingale"
+            }
+        },
+        "neo4j": {
+            "command": "npx",
+            "args": ["-y", "--package=neo4j-mcpserver", "neo4j-mcpserver"],
+            "env": {
+                "NEO4J_URI": "neo4j+s://82dcab45.databases.neo4j.io",
+                "NEO4J_USER": "neo4j",
+                "NEO4J_PASSWORD": "0Vd7DG61C472nBRCysOtD3NCQjPDRmpL6SFlm-K7XSE",
+                "NEO4J_DATABASE": "neo4j"
+            }
+        },
+        "tavily": {
+            "command": "npx",
+            "args": ["-y", "tavily-mcp@latest"],
+            "env": {
+                "TAVILY_API_KEY": "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"
+            }
+        },
+        "jina-ai": {
+            "command": "npx",
+            "args": ["-y", "--package=jina-ai-mcp-server", "jina-ai-mcp-server"],
+            "env": {
+                "JINA_API_KEY": "jina_22fcccb12b074e1e8031ad132783af842yMCjxeInP4j_Ncx31_5LAPEdt0q"
+            }
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": ["-y", "--package=@modelcontextprotocol/server-sequential-thinking", "@modelcontextprotocol/server-sequential-thinking"],
+            "env": {}
+        },
+        "antv-charts": {
+            "command": "npx",
+            "args": ["-y", "--package=@antv/mcp-server-chart", "@antv/mcp-server-chart"],
+            "env": {}
+        },
+        "fetch": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-fetch"],
+            "env": {}
+        },
+        "filesystem": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+            "env": {
+                "FILESYSTEM_ROOT": "/home/jim/gtm-campaign-project"
+            }
+        },
+        "n8n": {
+            "command": "npx",
+            "args": ["-y", "n8n-mcp-server"],
+            "env": {
+                "N8N_API_KEY": "YOUR_N8N_API_KEY_HERE",
+                "N8N_BASE_URL": "YOUR_N8N_INSTANCE_URL"
+            }
+        },
+        "postgrest": {
+            "command": "npx",
+            "args": ["-y", "postgrest-mcp-server"],
+            "env": {
+                "POSTGREST_URL": "YOUR_POSTGREST_URL",
+                "POSTGREST_API_KEY": "YOUR_POSTGREST_API_KEY"
+            }
+        },
+        "qdrant": {
+            "command": "npx",
+            "args": ["-y", "qdrant-mcp-server"],
+            "env": {
+                "QDRANT_URL": "YOUR_QDRANT_URL",
+                "QDRANT_API_KEY": "YOUR_QDRANT_API_KEY"
+            }
+        }
+    }
+}

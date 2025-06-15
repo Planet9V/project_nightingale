@@ -1,0 +1,76 @@
+{
+  "environment": "development",
+  "etl": {
+    "batchSize": 5,
+    "maxConcurrentJobs": 3,
+    "chunkSize": 1500,
+    "chunkOverlap": 200,
+    "enableCitationTracking": true,
+    "enableGraphRelationships": true,
+    "enableCache": false
+  },
+  "jinaAI": {
+    "apiKey": "${JINA_API_KEY}",
+    "endpoints": {
+      "embedding": "https://api.jina.ai/v1/embeddings",
+      "reranking": "https://api.jina.ai/v1/rerank",
+      "classifier": "https://api.jina.ai/v1/classify",
+      "deepSearch": "https://api.jina.ai/v1/search"
+    },
+    "models": {
+      "embedding": "jina-clip-v2",
+      "reranking": "jina-reranker-v2-base-multilingual",
+      "classifier": "jina-classifier-v1-base-en",
+      "deepSearch": "jina-search-v1-base-en"
+    },
+    "rateLimits": {
+      "embedding": 2000,
+      "reranking": 2000,
+      "classifier": 60,
+      "deepSearch": 500
+    },
+    "embeddingDimensions": 768
+  },
+  "databases": {
+    "supabase": {
+      "url": "${SUPABASE_URL}",
+      "anonKey": "${SUPABASE_ANON_KEY}",
+      "serviceKey": "${SUPABASE_SERVICE_KEY}"
+    },
+    "pinecone": {
+      "apiKey": "${PINECONE_API_KEY}",
+      "host": "${PINECONE_HOST}",
+      "indexName": "nightingale",
+      "environment": "us-east-1"
+    },
+    "neo4j": {
+      "uri": "${NEO4J_URI}",
+      "username": "neo4j",
+      "password": "${NEO4J_PASSWORD}",
+      "database": "neo4j"
+    }
+  },
+  "storage": {
+    "s3": {
+      "bucketName": "project_aeon_dt",
+      "region": "us-east-2",
+      "folders": {
+        "documents": "documents/",
+        "embeddings": "embeddings/",
+        "citations": "citations/",
+        "metadata": "metadata/"
+      }
+    }
+  },
+  "logging": {
+    "level": "info",
+    "logFile": "logs/etl-pipeline.log",
+    "enableFileLogging": true,
+    "enableConsoleLogging": true
+  },
+  "paths": {
+    "staging": "data/staging",
+    "output": "data/output",
+    "logs": "logs"
+  }
+}
